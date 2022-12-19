@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Passion+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+body{
+    border: 0px;
+    min-height: 100vw;
+}
+
+header{
+    background-color: black;
+    height: 25vw;
+    text-align: center;
+    
+} header > h1{
+    padding-top: 50px;
+    color: white;
+    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+
+} header > p{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px;
+    
+}header > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}header > p > a:hover{
+    text-decoration: underline;
+} p{
+    font-family: 'Courgette';
+    font-size: 3.5vw;
+    padding-bottom: 5px;
+} section.normal{
+    padding-left: 25px;
+    padding-top: 70px;
+    line-height: 7vw;
+    padding-bottom: 80px;
+} section.imagem{
+    height: 60vw;
+    background: black url(imagens/background001.jpg) center right no-repeat fixed;
+    background-size: cover;
+    min-height: 60vw;
+    display: flex;
+    box-shadow: 5px 5px 15px black;
+
+}
