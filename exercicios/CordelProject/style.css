@@ -45,11 +45,41 @@ header{
     line-height: 7vw;
     padding-bottom: 80px;
 } section.imagem{
-    height: 60vw;
+    height: 70vw;
     background: black url(imagens/background001.jpg) center right no-repeat fixed;
     background-size: cover;
     min-height: 60vw;
     display: flex;
     box-shadow: 5px 5px 15px black;
-
+} main{
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 45vw;
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 5vw;
+    position: absolute;
+} main > p{
+    color: white;
+    line-height: 7vw;
+    padding-bottom: 5px;
+} #second{
+    padding-top: 0px;
+} section#segunda{
+    background-image: url(imagens/background002.png);
+    background-position: center left;
+} footer{
+    background-color: black;
+    
+} footer > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+} footer > p > a:hover{
+    text-decoration: underline;
 }
