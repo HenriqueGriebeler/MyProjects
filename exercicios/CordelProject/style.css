@@ -22,7 +22,7 @@ header{
     font-family: 'Passion One', cursive;
     font-size: 10vw;
 
-} header > p{
+} header > p{ /* CABEÇALHO */
     text-align: center;
     font-size: 1em;
     color: white;
@@ -39,19 +39,19 @@ header{
     font-family: 'Courgette';
     font-size: 3.5vw;
     padding-bottom: 5px;
-} section.normal{
+} section.normal{   /* Falas sem imagem */
     padding-left: 25px;
     padding-top: 70px;
     line-height: 7vw;
     padding-bottom: 80px;
-} section.imagem{
+} section.imagem{   /* Com imagem */
     height: 70vw;
     background: black url(imagens/background001.jpg) center right no-repeat fixed;
     background-size: cover;
     min-height: 60vw;
     display: flex;
     box-shadow: 5px 5px 15px black;
-} main{
+} main{ /* Caixa em frente a imagem */
     background-color: rgba(0, 0, 0, 0.301);
     width: 45vw;
     margin-top: 70px;
