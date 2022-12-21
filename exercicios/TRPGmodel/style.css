@@ -50,6 +50,7 @@ p {
     height: 50vw;
     right: 0%;
     left: 10%;
-    top: 98vw;
+    margin-top: 98vw;
+    position:absolute;
     background-image: url(images/kailudbefore.jpeg);
 }
