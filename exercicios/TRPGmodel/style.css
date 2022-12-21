@@ -34,7 +34,7 @@ p {
     background-image: url(images/kailudthen.jpeg);
     background-size: cover;
     position: absolute;
-    right: 10%;
+    right: 8%;
     top: 1%;
 } .middle{
     margin-top: 2vw;
@@ -51,6 +51,6 @@ p {
     height: 50vw;
     right: 0%;
     left: 10%;
-    top: 93vw;
+    top: 95vw;
     background-image: url(images/kailudbefore.jpeg);
 }
