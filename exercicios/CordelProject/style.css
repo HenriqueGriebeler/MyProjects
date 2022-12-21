@@ -17,7 +17,7 @@ header{
     text-align: center;
     
 } header > h1{
-    padding-top: 50px;
+    padding-top: 5vw;
     color: white;
     font-family: 'Passion One', cursive;
     font-size: 10vw;
@@ -27,7 +27,7 @@ header{
     font-size: 1em;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 50px;
+    padding-bottom: 5vw;
     
 }header > p > a{
     color: white;
