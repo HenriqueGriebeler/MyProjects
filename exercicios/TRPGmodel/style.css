@@ -1,2 +1,56 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Charm&family=Merienda&display=swap');
+
+body{
+    background-image: url(images/Background001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Caramel';
+}
+/* Caramel*/
+h1{
+    font-family: 'Merienda';
+    color: rgb(214, 45, 2);
+    font-size: 5vw;
+    padding-left: 5vw;
+    margin-top: 3vw;
+}   
+
+p {
+    color: black;
+    font-size: 5vw;
+} .left{
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 2.5vw;
+}  main{
+    width: 40vw;
+    height: 40vw;
+    background-image: url(images/kailudthen.jpeg);
+    background-size: cover;
+    position: absolute;
+    right: 10%;
+    top: 1%;
+} .middle{
+    margin-top: 2vw;
+    margin-left: 4vw;
+    font-size: 5vw;
+    text-indent: 2vw;
+} .right{
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 2.5vw;
+    padding-left: 50%;
+    
+} #secondimage{
+    height: 50vw;
+    right: 0%;
+    left: 10%;
+    top: 93vw;
+    background-image: url(images/kailudbefore.jpeg);
+}
