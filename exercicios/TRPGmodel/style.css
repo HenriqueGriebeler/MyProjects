@@ -5,6 +5,7 @@
 body{
     background-image: url(images/Background001.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 *{
     padding: 0;
