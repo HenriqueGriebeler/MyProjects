@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /*deitado*/
+
+
+body{
+    background: url(../../imagens/cev-landscape.jpg) no-repeat;
+    background-position: left bottom;
+}

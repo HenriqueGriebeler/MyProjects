@@ -2,3 +2,22 @@
 
 /*Configurações gerais*/
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-size: contain;
+
+}
+
+h1{
+    color: aliceblue;
+    text-shadow: 1px 2px 0px rgb(167, 173, 179);
+    padding: 10px;
+}
