@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body, html{
+    background-color: aliceblue;
+}
+
+body{
+    width: 80vw;
+    margin: auto;
+}
