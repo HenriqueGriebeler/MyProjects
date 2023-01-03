@@ -13,11 +13,6 @@
     text-align: center;
 } 
 
-main{
-    width: 500px;
-    margin: auto;
-}
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -73,9 +68,10 @@ li > a{
 
 #heroes{
     padding: 30px;
+    
 }
 
-#heroes > h1, #heroes > p{
+#heroes > h1{
     text-align: left;
 }
 
@@ -113,4 +109,7 @@ a{
 
 @media screen and (orientation: portrait){
 
+}
+article#heroes>p{
+    text-align: left;
 }
