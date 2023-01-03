@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: rgba(248, 177, 71, 0.897);
+    background-color: white;
     background-image:  url(../images/Background001.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ a{
 
 #q1{
     background-image: url(../images/shipbattle.jpg);
-    background-position: left bottom;
+    background-position: left center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ a{
 
 #q2{
     background-image: url(../images/newspaper.jpg);
-    background-position: left bottom;
+    background-position: left center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ a{
 
 #q3{
     background-image: url(../images/bigcity.jpg);
-    background-position: left bottom;
+    background-position: left center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

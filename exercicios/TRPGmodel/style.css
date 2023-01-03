@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Charm&family=Merienda&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 body{
     background-image: url(images/Background001.jpg);
     background-size: cover;
@@ -10,7 +12,7 @@ body{
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Caramel';
+    font-family: 'MedievalSharp', cursive;
 }
 /* Caramel*/
 h1{
@@ -23,7 +25,7 @@ h1{
 
 p {
     color: black;
-    font-size: 5vw;
+    font-size: 4vw;
 } .left{
     width: 40vw;
     margin-left: 5vw;
@@ -53,5 +55,5 @@ p {
     left: 10%;
     margin-top: 93vw;
     position:absolute;
-    background-image: url(images/kailudbefore.jpeg);
+    background-image: url(images/1672764683975.png);
 }
