@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px){
+    #icon{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    #q1{display: inline-block;}
+    #q2{display: inline-block;}
+    #q3{display: inline-block;}
+    #q4{display: inline-block;}
+    #q5{display: inline-block;}
+
+    main{
+        max-width: 768px;
+    }
+}
