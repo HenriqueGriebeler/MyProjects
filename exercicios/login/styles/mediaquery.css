@@ -2,10 +2,10 @@
 
 @media screen and (min-width:768px){
 
-    section{
+    section#login{
 
         width: 90vw;
-        height: 50vh;
+        height: 46vh;
 
     } div#image{
 
@@ -33,6 +33,11 @@
 
 @media screen and (min-width:1200px){
 
+selection{
+
+    height: 46vw;
+
+}
 
 div#image{
     

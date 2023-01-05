@@ -42,7 +42,7 @@ main{
     padding: center;
     border-radius: 20px;
     max-width: 768px;
-    min-height: 620px;
+    min-height: 440px;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -75,7 +75,9 @@ div#image{
 } span{
 
     background-color: #FF3AFF;
-    padding: 6px;
+    padding: 3px;
+    font-size: 2.5em;
+    color: aliceblue;
     border-radius: 10px;
     
     
@@ -83,20 +85,21 @@ div#image{
 } label{
 
     background-color: #FF3AFF;
-    border-radius: 10px;
-    padding: 18px;
+    border-radius: 15px;
+    padding: 13px;
+    padding-right: 3px;
     padding-left: 0px;
 
 } input#user{
 
     width: 70%;
-    height: 3vh;
+    height: 2vh;
     border-style: none;
 
 } input#password{
 
     width: 70%;
-    height: 3vh;
+    height: 2vh;
     border-style: none;
 
 } form > input[type=submit]{
@@ -115,14 +118,22 @@ div#image{
 
     background-color: #1e51d3;
     border: 10px;
-    transition: padding .2s;
-    cursor: pointer;
     
+    cursor: pointer;
+    transition: padding .2s;
 
 }
 
 .campo{
+    
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 5px;
+    background-color: #cedcff;
+    transform: translateY(-1px);
 
-    width: 100%;
+} .campo:focus-within{
+
+    background-color: aliceblue;
 
 }
