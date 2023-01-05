@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+
+    section{
+
+        width: 90vw;
+        height: 50vh;
+
+    } div#image{
+
+        float: left;
+        width: 30%;
+        height: 100%;
+        position: relative;
+        border-radius: 20px 0px 0px 20px;
+
+    } div#image{
+
+        float: left;
+
+    } div#form{
+
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+
+
+    
+
+}
+
+@media screen and (min-width:1200px){
+
+
+div#image{
+    
+    float: right;
+    width: 40%;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+
+} div#form{
+
+    float: left;
+    width: 60%;
+    height: 100%;
+
+}
+
+
+
+}

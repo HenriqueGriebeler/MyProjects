@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <br>
+    <main>
+        <section id="login">
+            <div id="image">
+                
+            </div>
+            <div id="form">
+                <br>
+                <h1>Login:</h1>
+                <p>Seja bem-vindo novamente! <br>
+                Faça o login para fazer as configurações em seu ambiente.</p>
+                <br>
+                
+                <form action="login.js" method="post">
+
+                    <label for="user"><span class="material-symbols-outlined">
+                        person <!--ICONE do user-->
+                        </span> <input type="text" id="user" required size="16" placeholder=" Seu usuário" minlength="8" autocomplete="email" class="campo"></label>
+                    <br>
+                    <br>
+                    <label for="password"> 
+                        <span class="material-symbols-outlined">
+                            key
+                            </span> <!--ICONE da senha--> <input type="password" name="senha" id="password" required size="17" placeholder=" Sua senha" minlength="6" autocomplete="current-password" class="campo"></label>
+                    <br>
+                    
+                    <br>
+                    <input type="submit" value="Acessar" >
+                    
+                    <input type="submit" value="Esqueci minha senha" >
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+
+
+</body>
+</html>
