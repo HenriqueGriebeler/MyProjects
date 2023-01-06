@@ -39,21 +39,45 @@ p {
     right: 8%;
     top: 1%;
 } .middle{
+
     margin-top: 2vw;
     margin-left: 4vw;
     font-size: 4vw;
     text-indent: 2vw;
+
 } .right{
+
     width: 40vw;
     margin-left: 5vw;
     margin-top: 2.5vw;
     padding-left: 50%;
     
 } #secondimage{
+
     height: 50vw;
     right: 0%;
     left: 10%;
     margin-top: 93vw;
     position:absolute;
     background-image: url(images/1672764683975.png);
+
+} #break{
+ /*COLOCAR EM UMA DIV com style*/
+    display: block;
+    width: 95vw;
+    height: 30vw;
+    margin: auto;
+    background-position: center center;
+    background-image: none;
+    background-size: cover;
+
+} a{
+
+    color: black;
+    text-decoration: underline;
+
+} a:hover{
+
+    color: white;
+    
 }
