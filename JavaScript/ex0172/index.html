@@ -50,6 +50,16 @@
             transform: translate(-50%, -50%);
             margin: auto;
             
+        } #result{
+
+            width: 100%;
+            height: 80%;
+            background-color: gray;
+            border-radius: 25px;
+            margin: auto;
+            display: none;
+            text-align: center;
+
         }
 
 
@@ -63,15 +73,14 @@
 
     <main>
         <section>
-            <div id="formyear">
-                <label for="year"> <!--
-                    <p>Ano de nascimento <input type="number" name="year" id="year"></p> -->
-                </label>
-            </div>
-            <div id="gender">
-                <label for="gender">
-                    
-                </label>
+            <div>
+                <label for="inum">
+                <p><form action="number">Digite o número que deseja ver a tabuada<input type="number" name="number" id="inum"></form></p>
+                <br>
+                <input type="submit" value="Calcular tabuada" onclick="calculate()">
+                <br>
+            </label>
+            <br>
             </div>
             <div id="result">
 
