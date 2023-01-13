@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idades</title>
+    <style>
+        /*cor 094164
+        Aliceblue
+        */
+
+        *{
+
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        } body{
+
+            background-color: #094164;
+            color: aliceblue;
+            text-align: center;
+
+        } header{
+
+            padding: 25px;
+
+        } main{
+
+            width: 65vw;
+            height: 65vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 25px;
+            transform: translate(-50%, -50%);
+            background-color: aliceblue;
+            color: black;
+            max-width: 700px;
+            box-shadow: 2px 4px 5px black;
+
+        } section{
+
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            
+        } #result{
+
+            width: 40%;
+            background-color: gray;
+            border-radius: 15px;
+            margin: 20px;
+            float: left;
+            
+
+        } #end{
+
+            width: 40%;
+            float: right;
+            
+        
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Título</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label for="num">
+                <p>Adicione um número de 1 a 100 <input type="number" name="num" id="inum"></p>
+                <input type="submit" value="Adicionar" onclick="calculate()">
+                </label>
+            </div>
+            <div id="result">
+               
+                Números adicionados <br>
+            </div>
+            <div id="end">
+                <br>
+                <br>
+                <label for="end"><input type="button" value="Finalizar" onclick="finalize()"></label>
+                <p id="resultados"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>HenriqueGriebeler</p> <!--COLOCAR ISSO NO FINAL NAO ESQUECE-->
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
