@@ -134,7 +134,7 @@ a{
 
         text-align: center;
 
-    } article#heroes>p{
+    } article#heroes>p, article#heroes>h1{
     
     text-align: center;
 
