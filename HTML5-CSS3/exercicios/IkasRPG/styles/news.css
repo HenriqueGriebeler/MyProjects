@@ -1,0 +1,26 @@
+.jornal{
+
+    margin: 5px;
+
+} section{
+
+    margin: 20px;
+    padding: 10px 5px;
+    background-color: rgba(240, 248, 255, 0.479);
+    border-radius: 10px;
+    border: black solid 1px;
+
+} #imenu1{
+
+    width: 90%;
+    display: none;
+
+} #j1 {
+
+    cursor: pointer;
+
+} #j2 {
+
+    display: none;
+
+}
