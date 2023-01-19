@@ -17,3 +17,6 @@ function showP(){
     }
 
 }
+
+var pagina = 1
+
