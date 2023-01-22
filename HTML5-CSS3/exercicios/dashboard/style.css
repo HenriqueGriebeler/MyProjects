@@ -52,6 +52,7 @@ main{
     width: 100%;
     margin: auto;
     padding: 5px;
+    text-align: center;
 
 } menu {
 
@@ -66,11 +67,61 @@ main{
 
     margin: 0px .6vw;
     padding: 3px;
-    border: 1px solid black;
+    
 
 }a {
 
     text-decoration: none;
     color: black;
 
+} .box{
+
+    width: 32.5%;
+    height: 200px;
+    display: inline-flex;
+    text-align: center;
+    margin: 5px 2px;
+    
+
+} .box > p {
+
+    margin: auto;
+
+}#boxRose {
+ background-color: #FCB956;
+} #boxRose:hover{
+background-color: #c49042;
+
+} #boxGreen {
+ background-color: #56FCBE;
+} #boxGreen:hover {
+background-color: #44c596;
+
+} #boxBlue {
+ background-color:#546DF5;
+} #boxBlue:hover {
+ background-color:#4255c0;
+}#boxPurple {
+ background-color: #CCE65A;
+ width: 49%;  
+}#boxPurple:hover {
+    background-color: #97aa44;  
+
+} #boxRed {
+ background-color: #F54333;
+ width: 48%;  
+} #boxRed:hover {
+background-color: #b43226;
+width: 48%;  
+   }
+
+@media screen and (max-width: 950px){
+
+        .box{
+        width: 31.5%;
+        } #boxPurple {
+        width: 48%;    
+       } #boxRed {
+        width: 48%; 
+       }
 }
