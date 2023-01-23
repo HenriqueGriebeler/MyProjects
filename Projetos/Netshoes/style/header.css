@@ -34,7 +34,7 @@ text-align: center;
 
     width: 150px;
     padding: 10px;
-    margin-right: 155px;
+    margin-right: 80px;
     cursor: pointer;
 
 } header {
@@ -72,4 +72,25 @@ text-align: center;
     margin-left: 17vw;
     margin-right: 4vw;
 
-} 
+} #frame {
+
+    width: 100vw;
+
+}#bannerUp {
+
+    margin: auto;
+    text-align: center;
+    background-color: #FBED02;
+     
+} #banner {
+
+    text-align: center;
+
+} #banner-topHomePage{
+
+    width: 100%;
+
+}
+
+
+
