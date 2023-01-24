@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#frame {
+
+    width: 100vw;
+
+}#bannerUp {
+
+    margin: auto;
+    text-align: center;
+    background-color: #FBED02;
+     
+} #banner {
+
+    text-align: center;
+
+} #banner-topHomePage{
+
+    width: 100%;
+
+}
