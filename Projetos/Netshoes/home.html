@@ -22,7 +22,7 @@
     <div id="mainHeader">
     <header>
     <div id="menu">
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" onclick="openBigMenu()">
             menu
             </span>
     </div>
@@ -45,7 +45,7 @@
     <!--INICIO DO MENU-->
 
 
-    <menu>
+    <menu id="bigMenu">
         <div id="menuScale">
             <div>
             <div id="itens">
@@ -56,8 +56,8 @@
 
             <!--LISTA DE ITENS DO MENU-->
 
-                    <li onclick="openMinMenu()"><p>Mundial</p></li>
-                        <ul id="imundial">
+                    <li onclick="openMinMenu(1)"><p>Mundial</p></li>
+                        <ul id="imundial" class="closeMenus">
                         <li class="secondUl" ><p>Bolas</p></li>
                         <li class="secondUl"><p>Camisas de Times</p></li>
                         <li class="secondUl"><p>Camisetas para Torcer</p></li>
@@ -66,9 +66,9 @@
 
 
 
-                    <li onclick="openMinMenuTwo()"><p>Outlet</p></li>
-                        <ul id="ioutlet">
-                            <li class="thirdUl"><p>Ver tudo</p></li>
+                    <li onclick="openMinMenu(2)"><p>Outlet</p></li>
+                        <ul id="ioutlet" class="closeMenus">
+                            <li class="secondUl"><p>Ver tudo</p></li>
                         </ul>
                     <li><p>Masculino</p></li>
                     <li><p>Feminino</p></li>

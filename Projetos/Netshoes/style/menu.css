@@ -31,6 +31,7 @@
     padding: 20px;
     border-top: 1px solid #e2e2e2;
     
+    
 
 } li > p{
 
@@ -42,20 +43,24 @@
     background-color: var(--whiteGray);
     border-top: 1px dashed #dddddd;
     cursor: pointer;
+    text-indent: 33px;
 
-} .thirdUl {
-
-    
-    padding: 10px;
-    background-color: var(--whiteGray);
-    border-top: 1px dashed #dddddd;
-    cursor: pointer;
+/*TO ADD A NEW MENU INTO THE MENU
+attribute the class closeMenus 
+and create a new ID to the UL
+Go into JS and create the if
+verification to the 'a' of function
+openMinMenu*/
 
 } #imundial {
 
     display: none;
 
 } #ioutlet {
+
+    display: none;
+
+} #bigMenu{
 
     display: none;
 

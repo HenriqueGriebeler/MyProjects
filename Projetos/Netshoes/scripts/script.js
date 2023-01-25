@@ -1,20 +1,34 @@
-mundialMenu = document.getElementById('imundial')
-outletMenu = document.getElementById('ioutlet')
+var bigMenu = document.getElementById('bigMenu')
 
-function openMinMenu(){
-    if(mundialMenu.style.display == 'block'){
-        mundialMenu.style.display = 'none'
+function openBigMenu(){
+
+    bigMenu.style.display = 'block'
+}
+ /* DEVO CRIAR O X PARA FECHAR AO CLICAR NELE NA DIREITA ELE PODE SER UM  position:absolute*/
+
+
+function openMinMenu(a){
+    
+    allMenus = document.getElementsByClassName('closeMenus')
+
+    if(a == 1){
+        x = document.getElementById('imundial')
+    } else if(a == 2){
+        x = document.getElementById('ioutlet')
+    }
+    
+
+    if(x.style.display == 'block'){
+        x.style.display = 'none'
     } else {
-        mundialMenu.style.display = 'block'
+        for(i = 0; i < allMenus.length; i++){
+            allMenus[i].style.display = 'none';
+        }
+        x.style.display = 'block'
         }
     
 }
 
-function openMinMenuTwo(){
-    if(outletMenu.style.display == 'block'){
-        outletMenu.style.display = 'none'
-    } else {
-        outletMenu.style.display = 'block'
-        }
-    
-} /* DEVO CRIAR O MENU PARA APENAS UM ABRIR POR VEZ, DEVO TAMBÉM COLOCAR OS ICONES DAS CETAS */
+
+
+/* DEVO TAMBÉM COLOCAR OS ICONES DAS CETAS */
