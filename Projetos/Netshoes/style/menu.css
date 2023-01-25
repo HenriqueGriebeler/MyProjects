@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+   --purple: #5A2D82;
+   --whiteGray: #f4f4f4;
+}
+
+#menuScale{
+
+    
+    position: absolute;
+    width: 90vw;
+    top: 0%;
+    height: 100vh;
+    background-color: white;
+
+} #user{
+
+    background-color: var(--purple);
+    height: 46px;
+
+} span{
+
+    vertical-align: middle;
+    color: white;
+    text-decoration: double;
+
+} li {
+
+    /*DIPSPLAY É O LIST ITEM*/
+    padding: 20px;
+    border-top: 1px solid #e2e2e2;
+    
+
+} li > p{
+
+    cursor: pointer;
+
+} .secondUl{
+
+    padding: 10px;
+    background-color: var(--whiteGray);
+    border-top: 1px dashed #dddddd;
+    cursor: pointer;
+
+} .thirdUl {
+
+    
+    padding: 10px;
+    background-color: var(--whiteGray);
+    border-top: 1px dashed #dddddd;
+    cursor: pointer;
+
+} #imundial {
+
+    display: none;
+
+} #ioutlet {
+
+    display: none;
+
+}

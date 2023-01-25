@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 *{
-
+    --strongPurple: #370f53;
+    --white: white;
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +16,7 @@
 
     width: 100vw;
     height: 26px;
-    background-color: #370f53;
+    background-color: var(--strongPurple);
 
 } #upHeader > section {
 
@@ -29,13 +30,13 @@ text-align: center;
 } #produtos{
 
     text-decoration: none;
-    color: white;
+    color: var(--white);
 
 } #logo {
     
     width: 150px;
     padding: 10px;
-    margin-right: calc(var(--width) - -42px);
+    margin-right: 37px;
     cursor: pointer;
 
 } header {
@@ -47,11 +48,11 @@ text-align: center;
 
 } #mainHeader{
 
-    background-color: #5A2D82;
+    background-color: var(--purple);
 
 } .material-symbols-outlined{
 
-    color: white;
+    color: var(--white);
     padding: 10px;
 
 } #menu {
@@ -79,35 +80,35 @@ text-align: center;
     cursor: pointer;
 } #searchArea {
 
-    width: 100%;
+    width: 99.5%;
     height: 42px;
-    border: 1px solid black;
-
 
 } #isearch {
 
-    width: 80%;
+    width: 100%;
     border: none;
 
 } #searchIcon-icon {
 
     color: black;
+    cursor: pointer;
 
 } #search {
 
-    margin: 0px;
-    width: 80%;
-    
+    width: 60vw;
+    height: 42px;
+    float: left;
 
 }#pSearch {
 
-    margin-top: 5.5px; /*PRECISO CORRIGIR ESSA PARTE*/
+    margin-top: 10px;
+     /*PRECISO CORRIGIR ESSA PARTE*/
+     
 
 } #searchIcon {
 
     float: right;
     display: table-cell;
-    border: 1px solid black;
 
 }
 
@@ -117,7 +118,7 @@ text-align: center;
 @media screen and (min-width:500px){
 
     #logo {
-        margin-right: calc(var(--width) - -177px);
+        margin-right: 160px;
     }
 
 }
