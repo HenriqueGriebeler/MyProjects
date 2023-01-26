@@ -10,11 +10,24 @@
     text-align: center;
     background-color: #FBED02;
      
-} #banner {
+} .banner {
 
     text-align: center;
 
-} #banner-topHomePage{
+} .banner-topHomePage{
+
+    width: 100%;
+
+} .miniBannerSpace {
+
+    margin: 10px;
+    text-align: center;
+
+} .miniBanner {
+
+    width: 65%;
+
+} #bannerSecond {
 
     width: 100%;
 

@@ -3,6 +3,7 @@
 *{
    --purple: #5A2D82;
    --whiteGray: #f4f4f4;
+   --spanLocation: 80vw
 }
 
 #menuScale{
@@ -28,7 +29,7 @@
 } li {
 
     /*DIPSPLAY É O LIST ITEM*/
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #e2e2e2;
     
     
@@ -63,5 +64,28 @@ openMinMenu*/
 } #bigMenu{
 
     display: none;
+
+} p>.material-symbols-outlined{
+
+    color: black;
+    display: right;
+    
+} .secondUl > span {
+
+    color: black;
+    float: right;
+    
+} #closeIcon {
+ 
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+
+
+} #closeIconArea {
+
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: rgba(36, 36, 36, 0.74);
 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,31 +56,37 @@
 
             <!--LISTA DE ITENS DO MENU-->
 
-                    <li onclick="openMinMenu(1)"><p>Mundial</p></li>
+                    <li onclick="openMinMenu(1)"><p>Mundial<span class="material-symbols-outlined">expand_more</span></p></li>
                         <ul id="imundial" class="closeMenus">
-                        <li class="secondUl" ><p>Bolas</p></li>
-                        <li class="secondUl"><p>Camisas de Times</p></li>
-                        <li class="secondUl"><p>Camisetas para Torcer</p></li>
-                        <li class="secondUl"><p>Chuteiras</p></li>
+                        <li class="secondUl" ><p>Bolas<span class="material-symbols-outlined">chevron_right</span></p> </li>
+                        <li class="secondUl"><p>Camisas de Times<span class="material-symbols-outlined">chevron_right</span></p> </li>
+                        <li class="secondUl"><p>Camisetas para Torcer<span class="material-symbols-outlined">chevron_right</span></p> </li>
+                        <li class="secondUl"><p>Chuteiras<span class="material-symbols-outlined">chevron_right</span></p> </li>
                         </ul>
 
 
 
-                    <li onclick="openMinMenu(2)"><p>Outlet</p></li>
+                    <li onclick="openMinMenu(2)"><p>Outlet<span class="material-symbols-outlined">expand_more</span></p></li>
                         <ul id="ioutlet" class="closeMenus">
-                            <li class="secondUl"><p>Ver tudo</p></li>
+                            <li class="secondUl"><p>Ver tudo<span class="material-symbols-outlined">chevron_right</span></p> </li>
                         </ul>
-                    <li><p>Masculino</p></li>
-                    <li><p>Feminino</p></li>
-                    <li><p>Infantil</p></li>
-                    <li><p>Esportes</p></li>
-                    <li><p>Calçados</p></li>
-                    <li><p>Roupas</p></li>
-                    <li><p>Suplementos</p></li>
-                    <li><p>Top Marcas</p></li>
-                    <li><p>Corrida</p></li>
-                    <li><p>Acessibilidade</p></li>
+                    <li><p>Masculino<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Feminino<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Infantil<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Esportes<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Calçados<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Roupas<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Suplementos<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Top Marcas<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Corrida<span class="material-symbols-outlined">expand_more</span> </p></li>
+                    <li><p>Acessibilidade <span class="material-symbols-outlined">expand_more</span></p></li>
+                        <!--FECHANDO O MENU-->
 
+                    <div id="closeIconArea" onclick='closeBigMenu()'>
+                    <span class="material-symbols-outlined" id="closeIcon">
+                        close
+                        </span>
+                    </div>
 
                 </ul>
             </div>
@@ -101,29 +107,48 @@
     </div>
 
     <div id="searchIcon">
-        
-
-        <span id="searchIcon-icon" class="material-symbols-outlined" onclick="search()">
+            <span id="searchIcon-icon" class="material-symbols-outlined" onclick="search()">
             search
             </span>   
-
-
     </div>
     </div>
+    <!--INICIO DAS IMAGENS DA PÁGINA-->
 
-
-
-
+    <!--BANNER01-->
 
     <div id="frame">
     <div id="bannerUp">
     <img src="images/bannerUp.png" alt="Promoção">
+
     </div>
-    <div id="banner">
-    <img id='banner-topHomePage' src="images/bannerOne.png" alt="Promoção">
+
+    <!--BANNER02-->
+
+    <div class="banner">
+    <img class='banner-topHomePage' src="images/bannerOne.png" alt="Promoção">
+    
     </div>
+
+    <!--BANNER03-->
+    
+    
+    <div class='miniBannerSpace'>
+    <div> <!--QUANDO EU APRENDER VOU FAZER ESSE SE MOVER PARA O LADO E MOSTRAR OUTROS DA CATEGORIA-->
+        <img class='miniBanner' src="images/miniBannerOne.png" alt="4 por R$99,90">
+
+    </div>
+    </div>
+
+    <!--BANNER04-->
+
+    
+    <div>
+        <img id='bannerSecond'src="images/bannerTwo.png" alt="">
     </div>
     
+    
+    
+    </div>
 
 
 
