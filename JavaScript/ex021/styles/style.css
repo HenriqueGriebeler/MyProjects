@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    --blue: #412DFC;
+    --rose: #cd51d8;
+}
+
+body {
+
+    background-image: linear-gradient(to right, var(--blue), var(--rose));
+
+} #frame{
+
+    background-color: aliceblue;
+    width: 85vw;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 28px 28px 0px 0px;
+    
+} label{
+
+    margin: 5px;
+
+} header {
+
+   border-radius: 25px 25px 0px 0px;
+   background-color: var(--rose);
+   padding: 7px;
+   
+} button {
+
+    border: none;
+    background-color: var(--rose);
+    padding: 10px;
+    color: #fff;
+
+} button:hover {
+
+    background-color: #913999;
+
+} table {
+
+    width: 100%;
+    margin: auto;
+   
+} thead {
+
+    background-color: rgb(178, 184, 189);
+
+} 
