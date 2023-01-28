@@ -15,7 +15,7 @@ body {
 } #frame{ /*TODA A AREA PREENCHIDA DA PÁGINA*/
 
     background-color: aliceblue;
-    width: 85vw;
+    width: 90vw;
     max-width: 1000px;
     text-align: center;
     margin: auto;
@@ -52,4 +52,8 @@ body {
 
     background-color: rgb(178, 184, 189);
 
-} 
+} span {
+
+    cursor: pointer;
+
+}

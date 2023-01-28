@@ -15,6 +15,7 @@ if(this.validaCampos(produto)){
     this.adicionar(produto)
 }
     this.listaTabela()
+    this.deletar()
 }
 
 listaTabela(){  //BOTANDO O ITEM NA TABELA
@@ -26,12 +27,15 @@ listaTabela(){  //BOTANDO O ITEM NA TABELA
 
         let td_id = tr.insertCell();
         let td_produto = tr.insertCell();
+        let td_quantidade = tr.insertCell();
         let td_valor = tr.insertCell();
         let td_acoes = tr.insertCell();
 
         td_id.innerText = this.arrayProdutos[i].id
         td_produto.innerText = this.arrayProdutos[i].nomeProduto
+        td_quantidade.innerText = this.arrayProdutos[i].quantidade
         td_valor.innerText = this.arrayProdutos[i].valor
+        td_acoes.innerHTML = '<span class="material-symbols-outlined"> edit_square </span> <span class="material-symbols-outlined"> delete </span>'
         
 
     }
@@ -51,6 +55,7 @@ let produto = {}
     produto.id = this.id
     produto.nomeProduto = document.getElementById('produto').value
     produto.valor = document.getElementById('ivalue').value
+    produto.quantidade = document.getElementById('inum').value
 
     return produto;
 }
@@ -63,6 +68,8 @@ validaCampos(produto){      //VERIFICA SE TODOS OS CAPOS FORAM PREENCHIDOS
         msg += '-Não esqueça de preencher o nome \n'
    }if(produto.valor == ''){
         msg+= '-Não esqueça de preencher o valor \n'
+    }if(produto.quantidade == ''){
+        msg+= '-Não esqueça de preencher a quantidade \n'
     }
     if(msg!=''){
         alert(msg)
@@ -72,6 +79,10 @@ validaCampos(produto){      //VERIFICA SE TODOS OS CAPOS FORAM PREENCHIDOS
 }
 
 deletar() {     //AÇÃO DE DELETAR OS PRODUTOS
+
+    document.getElementById('produto').value = ''
+    document.getElementById('ivalue').value = ''
+    document.getElementById('inum').value = ''
 
 }
 

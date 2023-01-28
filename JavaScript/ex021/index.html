@@ -47,12 +47,14 @@
 
                 <!--Botões da página-->
 
-                <label for="salvar"><p>Salvar: <input type="text" name="product" id="produto" placeholder="Nome do produto" maxlength="30"></p></label>
+                <label for="salvar"><p>Produto: <input type="text" name="product" id="produto" placeholder="Nome do produto" maxlength="30"></p></label>
+                <label for="quantidade"><p>Quantidade: <input type="number" name="num" id="inum" placeholder="Quantidade do produto"></p></label>
                 <label for="value"><p>Valor: <input type="number" name="value" id="ivalue" placeholder="Valor do produto" maxlength="5"></p></label>
+                
 
                 <div>
                     <button onclick="produto.salvar()">Adicionar</button>
-                    <button onclick="produto.deletar()">Deletar</button>
+                    <button onclick="produto.deletar()">Apagar</button>
                 </div>
 
                     <!--INICIO DA TABELA DE PRODUTOS-->
@@ -63,10 +65,11 @@
             <table>
                 <thead>
                     
-                    <th id="id-th">ID</th>
-                    <th id="produto-th">Produto</th>
-                    <th id="valor-th">Valor</th>
-                    <th id="acao-th">Ações</th>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
                 
                 </thead>
                 <tbody id="tbody">
@@ -79,3 +82,15 @@
 
 </body>
 </html>
+
+<!--
+
+    <span class="material-symbols-outlined">
+edit_square
+</span>
+
+    <span class="material-symbols-outlined">
+delete
+</span>
+
+-->
