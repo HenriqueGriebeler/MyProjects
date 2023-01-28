@@ -12,7 +12,7 @@ body {
 
     background-image: linear-gradient(to right, var(--blue), var(--rose));
 
-} #frame{
+} #frame{ /*TODA A AREA PREENCHIDA DA PÁGINA*/
 
     background-color: aliceblue;
     width: 85vw;
