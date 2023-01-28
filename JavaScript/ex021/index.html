@@ -32,6 +32,7 @@
                 <div>
                     
                     <p>EDITOR DE PRODUTOS</p>
+
                 </div>
             </div>
         </header>
@@ -44,11 +45,11 @@
                 <h1>PRODUTOS</h1>
                 <p>Lista de produtos da minha loja:</p>
                 <br>
-                <label for="adicionar"><p>Adicionar: <input type="text" name="product" id="iadicionar" placeholder="Nome do produto"></p></label>
+                <label for="salvar"><p>Salvar: <input type="text" name="product" id="produto" placeholder="Nome do produto"></p></label>
                 <label for="value"><p>Valor: <input type="number" name="value" id="ivalue" placeholder="Valor do produto"></p></label>
 
                 <div>
-                    <button onclick="produto.adicionar()">Adicionar</button>
+                    <button onclick="produto.salvar()">Adicionar</button>
                     <button onclick="produto.deletar()">Deletar</button>
                 </div>
                     <!--INICIO DA TABELA DE PRODUTOS-->
@@ -57,24 +58,15 @@
         <br>
             <table>
                 <thead>
+                    <td>
                     <th>ID</th>
                     <th>Produto</th>
                     <th>Valor</th>
                     <th>Ações</th>
+                </td>
                 </thead>
-                <tbody>
-                    <tr>
-                    <td>0</td>
-                    <td>Computador gamer</td>
-                    <td>4.599,99</td>
+                <tbody id="tbody">
 
-                    <td><span class="material-symbols-outlined">
-                        edit_square
-                        </span> <span class="material-symbols-outlined">
-                        delete
-                        </span></td>
-                    </tr>
-                    
                 </tbody>
             </table>
     </div>
