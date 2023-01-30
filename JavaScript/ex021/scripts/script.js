@@ -20,6 +20,8 @@ if(this.validaCampos(produto)){
 
 listaTabela(){  //BOTANDO O ITEM NA TABELA
 
+let editIcon = '<span class="material-symbols-outlined"> edit_square </span>'
+
     let tbody = document.getElementById('tbody')
     tbody.innerText = ''
     for(let i = 0; i < this.arrayProdutos.length; i++){
@@ -35,7 +37,13 @@ listaTabela(){  //BOTANDO O ITEM NA TABELA
         td_produto.innerText = this.arrayProdutos[i].nomeProduto
         td_quantidade.innerText = this.arrayProdutos[i].quantidade
         td_valor.innerText = this.arrayProdutos[i].valor
-        td_acoes.innerHTML = '<span class="material-symbols-outlined"> edit_square </span> <span class="material-symbols-outlined"> delete </span>'
+
+        let trashIcon = '<span class="material-symbols-outlined" onclick="produto.cancelar('+this.arrayProdutos[i].id+')"> delete </span>'
+
+    
+
+        td_acoes.innerHTML += editIcon;
+        td_acoes.innerHTML += trashIcon;
         
 
     }
@@ -83,6 +91,24 @@ deletar() {     //AÇÃO DE DELETAR OS PRODUTOS
     document.getElementById('produto').value = ''
     document.getElementById('ivalue').value = ''
     document.getElementById('inum').value = ''
+
+}
+
+cancelar(id)  {
+
+    let tbody = document.getElementById('tbody')
+
+    for(let i = 0; i < this.arrayProdutos.length; i++){
+        if(this.arrayProdutos[i].id == id){
+            this.arrayProdutos.splice(i, 1)
+            tbody.deleteRow(i)
+
+            
+        }
+
+    }
+console.log(this.arrayProdutos)
+    
 
 }
 
