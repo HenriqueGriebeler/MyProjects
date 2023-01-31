@@ -3,6 +3,7 @@ class Produto{
 constructor(){
     this.id = 1
     this.arrayProdutos = []
+    this.editId = null
 }
 
 
@@ -12,15 +13,17 @@ constructor(){
 salvar(){                       //FUNÇÃO INICIAL
 let produto = this.lerDados()
 if(this.validaCampos(produto)){
+    if(this.editId==null){
     this.adicionar(produto)
+} else {
+    this.atualizar(this.editId, produto)
+}
 }
     this.listaTabela()
     this.deletar()
 }
 
 listaTabela(){  //BOTANDO O ITEM NA TABELA
-
-let editIcon = '<span class="material-symbols-outlined"> edit_square </span>'
 
     let tbody = document.getElementById('tbody')
     tbody.innerText = ''
@@ -39,7 +42,7 @@ let editIcon = '<span class="material-symbols-outlined"> edit_square </span>'
         td_valor.innerText = this.arrayProdutos[i].valor
 
         let trashIcon = '<span class="material-symbols-outlined" onclick="produto.cancelar('+this.arrayProdutos[i].id+')"> delete </span>'
-
+        let editIcon = '<span class="material-symbols-outlined" onclick="produto.editar('+this.arrayProdutos[i].id+')"> edit_square </span>'
     
 
         td_acoes.innerHTML += editIcon;
@@ -92,18 +95,57 @@ deletar() {     //AÇÃO DE DELETAR OS PRODUTOS
     document.getElementById('ivalue').value = ''
     document.getElementById('inum').value = ''
 
+    this.editId=null
+    document.getElementById('btn1').innerText = 'Adicionar'
+
+}
+
+atualizar(id, produto){
+    
+    for(let i = 0; i < this.arrayProdutos.length; i++){
+        if(this.arrayProdutos[i].id == id){
+             this.arrayProdutos[i].nomeProduto = produto.nomeProduto
+             this.arrayProdutos[i].valor = produto.valor
+             this.arrayProdutos[i].quantidade = produto.quantidade
+         }
+    }
+
+}
+
+editar(id){
+
+this.editId = id //TESTAR DPS COM = id.id
+
+    let productCamp = document.getElementById('produto')
+    let productValue = document.getElementById('ivalue')
+    let productNumb = document.getElementById('inum')
+
+    for(let i = 0; i < this.arrayProdutos.length; i++){
+        if(id == this.arrayProdutos[i].id){
+
+            productCamp.value = this.arrayProdutos[i].nomeProduto
+            productValue.value = this.arrayProdutos[i].valor
+            productNumb.value = this.arrayProdutos[i].quantidade
+
+            document.getElementById('btn1').innerText = 'Atualizar'
+
+        }
+    }
+
+
 }
 
 cancelar(id)  {
 
     let tbody = document.getElementById('tbody')
 
+    if(confirm('Deseja deletar o produto nº '+id)){
     for(let i = 0; i < this.arrayProdutos.length; i++){
         if(this.arrayProdutos[i].id == id){
             this.arrayProdutos.splice(i, 1)
             tbody.deleteRow(i)
 
-            
+        }
         }
 
     }
