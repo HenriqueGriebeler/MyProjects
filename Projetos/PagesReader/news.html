@@ -59,8 +59,8 @@ body{
     <article>
             <div class="jornal">
                         <section>
-                        <div id="j1" onclick="showP()">
-                        <p>08/WEZZ<span class="material-symbols-outlined">
+                        <div id="j1">
+                        <p>08/WEZZ<span class="material-symbols-outlined" onclick="newsPaper.load()">
                             expand_more
                         </span></p>
                         <section id="imenu1">
@@ -69,19 +69,17 @@ body{
                             <img class="page" src="images/jornal1/3.png" alt="3" id="i3">
                             <img class="page" src="images/jornal1/4.png" alt="4" id="i4">
                             <img class="page" src="images/jornal1/5.png" alt="5" id="i5">
+                            <span class="material-symbols-outlined">
+                                navigate_before
+                                </span>
+                            <span class="material-symbols-outlined">
+                                navigate_next
+                                </span>
+
                         </section>
                         </div>
             </section>
             
-            <section>
-                        <div id="j2">
-                            <p>09/EXXIN<span class="material-symbols-outlined">
-                                expand_more
-                            </span></p>
-                            </div>
-                        </section>
-                    </div>
-
     </article>
 
 <br>
@@ -90,3 +88,12 @@ body{
     <script src="scripts/script.js"></script>
 
 </html>
+
+<!-- <span class="material-symbols-outlined">
+navigate_next
+</span>
+
+<span class="material-symbols-outlined">
+navigate_before
+</span>
+-->
