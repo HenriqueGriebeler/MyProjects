@@ -53,4 +53,27 @@
     transform: scale(0.95);
     transition: .5s;
 
+} .imgSource {
+
+    text-align: center;
+    margin: 10px;
+    background-color: var(--white);
+
+} .imgSource > p {
+
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    
+
+} .linePrice {
+
+    text-decoration: line-through;
+    text-align: left;
+    color: black;
+
+} .imgSource > .price {
+
+    font-size: 24px;
+
 }
