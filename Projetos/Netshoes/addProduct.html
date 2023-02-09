@@ -105,8 +105,18 @@
             <h1>ADICIONAR PRODUTO</h1>
             <label for="nome"><p>Nome: <input type="text" name="nome" id="inome" placeholder="Nome do produto" width="50px"></p></label>
             <label for="price"><p>Preço: <input type="number" name="price" id="iprice" placeholder="Preço do produto"></p></label>
-            <label for="image">Imagem do produto: <input type="image" src="image" alt="iimg"></label>
-        </main>
+
+            <br>
+
+
+            <label for="file"><input id="upload" type="file" onChange="handleImageUpload()" /></label>
+            <img id="display-image" src="" />
+
+            <br>
+
+            <label id="send" for="file"><input type="submit" value="Enviar" onclick="send()"></label>
+
+            </main>
 
 
 
