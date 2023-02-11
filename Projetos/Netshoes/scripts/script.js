@@ -77,6 +77,8 @@ if(aviso != ''){
 //CONFIGURANDO OS PARAMETROS PARA O OBJETO PRODUTO
     //FALTA ADICIONAR ELES AO OBJETO AGORA
 produto = new Produto()
+produto.load(productName, productPrice, productImage, productSRC)
+
 
 //CLEAR NEEDS TO BE THE LAST COMMAND
 clear(productName, productPrice, productImage, productSRC)
@@ -96,9 +98,29 @@ function clear(a, b, c, d){
 class Produto{
 
     constructor(){
-        this.productName = ''
-        this.productPrice = ''
+        this.arrayProduct = []
+    }
 
+    load(a,b,c,d){
+
+        let produto = this.getElements(a,b,c,d)
+        this.test(produto)
+
+    }
+
+    getElements(pdName, pdPrice, pdImage, pdSRC){
+
+        let produto = {}
+
+        produto.productName = pdName.value
+        produto.productPrice = pdPrice.value
+        produto.productImage = pdImage.value
+        produto.productSRC = pdSRC.value
+
+        return produto
+
+    } test(produto){
+        alert(produto.productName)
     }
     
 }
