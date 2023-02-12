@@ -29,14 +29,26 @@ main{
 } #productsMain {
 
     margin-top: 34px;
+    display: none;
+    
 
-} #productsArea{
+} #productsArea {
 
-    width: 100%;
+    width: 100%;  
 
 } .products {
 
     width: 49%;
+    text-align: left;
     display: inline-block;
+
+
+} .products > img {
+
+    width: 100%;
+
+} .price {
+
+    color: pink;
 
 }

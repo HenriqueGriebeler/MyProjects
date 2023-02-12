@@ -5,7 +5,9 @@ var bigMenu = document.getElementById('bigMenu')
 
 function openBigMenu(){
 
+    //COLOCAR DEPOS UMA FUNÇÃO PARA NÃO ROLAR A TELA
     bigMenu.style.display = 'block'
+
 }
  
 function closeBigMenu(){
@@ -13,7 +15,6 @@ function closeBigMenu(){
     bigMenu.style.display = 'none'
 
 }
-
 
 function openMinMenu(a){
     
@@ -74,11 +75,7 @@ if(aviso != ''){
     alert(aviso)
 } else if(aviso == ''){
 
-//CONFIGURANDO OS PARAMETROS PARA O OBJETO PRODUTO
-    //FALTA ADICIONAR ELES AO OBJETO AGORA
-produto = new Produto()
 produto.load(productName, productPrice, productImage, productSRC)
-
 
 //CLEAR NEEDS TO BE THE LAST COMMAND
 clear(productName, productPrice, productImage, productSRC)
@@ -99,12 +96,16 @@ class Produto{
 
     constructor(){
         this.arrayProduct = []
+        this.id = 0
+
     }
 
     load(a,b,c,d){
 
         let produto = this.getElements(a,b,c,d)
-        this.test(produto)
+        this.importArray(produto)
+        this.showProduct()
+        
 
     }
 
@@ -112,15 +113,43 @@ class Produto{
 
         let produto = {}
 
+        produto.id = this.id
         produto.productName = pdName.value
         produto.productPrice = pdPrice.value
         produto.productImage = pdImage.value
-        produto.productSRC = pdSRC.value
-
+        produto.productSRC = pdSRC.src
+        
         return produto
 
-    } test(produto){
-        alert(produto.productName)
+    } importArray(produto){
+
+        this.arrayProduct.push(produto)
+        this.id++
+        
+    } 
+
+    showProduct(){
+
+        var productArea = document.getElementById('productsArea')
+        this.clear(productArea)
+        for(let i = 0; i < this.arrayProduct.length; i++){
+
+            let area = document.createElement('div')
+            area.setAttribute('class', 'products')
+            area.innerHTML += '<img src="'+this.arrayProduct[i].productSRC+'" alt="IMG">\n'
+            area.innerHTML += '<p>'+this.arrayProduct[i].productName+'</p>\n'
+            area.innerHTML += '<p>'+this.arrayProduct[i].productPrice+'</p>\n'
+
+            productArea.appendChild(area)
+            document.getElementById('productsMain').style.display = 'block'
+
+
+        }
+
+        
+    }
+    clear(productArea) {
+        productArea.innerHTML = ''
     }
     
-}
+} var produto = new Produto()
