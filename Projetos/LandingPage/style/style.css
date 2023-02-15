@@ -89,5 +89,12 @@ margin: 10px;
     width: 400px;
     border-radius: 15px;
     
+} #forms > p {
+
+    margin: 20px;
+
+} input {
+
+    padding: 5px;
 
 }
