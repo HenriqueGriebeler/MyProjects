@@ -41,7 +41,15 @@ margin: 10px;
 
     background-color: var(--sectionColor);
     border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    transition: width .3s;
+    transition-timing-function: ease;
+    
+} #redLineColor:hover{
 
+    width:  75%;
+    
 } #imageDiv {
 
     margin: 75px 0px;
@@ -49,6 +57,11 @@ margin: 10px;
 }#imageMine {
 
     width: 50%;
+    transition: width .3s;
+
+} #imageMine:hover{
+
+    width: 55%;
 
 } #leftBorder {
 
@@ -57,12 +70,17 @@ margin: 10px;
     text-align: center;
     border-radius: 0px 15px 15px 0px;
     background-color:  var(--leftBorder);
+    transition: padding .3s;
+
+} #leftBorder:hover{
+
+    padding: 20px;
 
 } #fiveStarArea {
 
     margin: 25px;
 
-}#rateImage {
+} #rateImage {
 
     width: 180px;
 
