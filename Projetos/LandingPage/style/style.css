@@ -89,12 +89,31 @@ margin: 10px;
     width: 400px;
     border-radius: 15px;
     
-} #forms > p {
+} #forms > div {
 
     margin: 20px;
+    
 
 } input {
 
     padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+
+} #forms {
+
+    background-color: var(--sectionColor);
+    border-radius: 30px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+
+} #forms > div > p:hover {
+
+    color: var(--leftBorder);
+
+} #forms > div > p::before {
+
+    content: '>> ';
 
 }
