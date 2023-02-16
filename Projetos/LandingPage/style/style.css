@@ -8,6 +8,7 @@
     --sectionColor: #F5001A;
     --sectionColor2: #EE4758;
     --leftBorder: #118FF8;
+    
 
 }  html, body {
 
@@ -76,7 +77,11 @@ margin: 10px;
 
     padding: 20px;
 
-} #fiveStarArea {
+} #leftBorderBig {
+
+    display: none;
+
+}#fiveStarArea {
 
     margin: 25px;
 
@@ -115,5 +120,9 @@ margin: 10px;
 } #forms > div > p::before {
 
     content: '>> ';
+
+} #sendButton {
+
+    cursor: pointer;
 
 }
