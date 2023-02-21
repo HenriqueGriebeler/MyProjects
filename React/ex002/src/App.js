@@ -1,14 +1,44 @@
 import './App.css';
+import { useState } from "react";
 
-const age = 17
-const isRed = false
+const planets = [
+  {name: "Mercury", isGasPlanet: false},
+  {name: "Venus", isGasPlanet: false},
+  {name: "Earth", isGasPlanet: false},
+  {name: "Mars", isGasPlanet: false},
+  {name: "Jupiter", isGasPlanet: true},
+  {name: "Saturn", isGasPlanet: true},
+  {name: "Uranus", isGasPlanet: true},]
+
+
+//useStates
+
+
 
 function App() {
+
+  const [age, setAge] = useState(0)
+
+const increase = () => {
+  setAge(age + 1)
+};
+
   return (
     <div className="App">
-      <p style={{color: isRed ? "red" : "lightblue"}}>{age >= 18 ? "OVER AGE" : "UNDER AGE"}</p>
-    </div>
+        
+    {planets.map((pl, key) => {
+      key = {key}
+      if(pl.isGasPlanet) return <h1>{pl.name}</h1>
+
+    })}
+
+    <h2>Age: {age} <button onClick={increase}> Increase </button> </h2>
+
+</div>
   );
+  
 }
+
+
 
 export default App;
