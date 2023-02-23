@@ -32,4 +32,10 @@ color: var(--color2);
 
   padding-top: 4vh;
 
-}
+} .addTask {
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+} 
