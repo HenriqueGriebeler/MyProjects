@@ -7,15 +7,29 @@ function App() {
 Muito cuidado para não errar isso logo no
 início */}
 
+const Select = () => {
+  return <div>
+  <h1>Selecione a cor</h1>
+  </div>
+}
+
+const [Color, setColor] = useState('')
+
+const changeColor = (color) => { //PRECISO FAZER ESSE color RETORNAR A COR CLICADA EM CHANGECOLOR, assim que tiver isso vai funcionar...
+  //setColor(color)
+  console.log(color)
+
+}
+
   return (
     <div className="App">
-      <div>
-        <h1>Select a color</h1>
+      
+      <Select />
 
-        <Colors />
+        <Colors changeColor={changeColor()}/>
 
       </div>
-    </div>
+    
   );
 }
 
