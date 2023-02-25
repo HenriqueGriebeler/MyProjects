@@ -1,5 +1,5 @@
 import './App.css';
-import {Colors} from './Colors.js'
+//import {Colors} from './Colors.js'
 import { useState } from 'react'
 function App() {
 
@@ -9,24 +9,29 @@ início */}
 
 const Select = () => {
   return <div>
-  <h1>Selecione a cor</h1>
+  <h1 style={{color: Text}}>Selecione a cor</h1>
   </div>
 }
 
-const [Color, setColor] = useState('black')
+const [Text, setTextColor] = useState('black')
 
-const changeColor = () => { //PRECISO FAZER ESSE color RETORNAR A COR CLICADA EM CHANGECOLOR, assim que tiver isso vai funcionar...
-  //setColor(color)
-  
+const changeColor = (color) => { 
+  setTextColor(color)
+  console.log(Text)
 }
 
   return (
     <div className="App">
       
       <Select />
+    <div>
+      <h2 style={{color:'red'}} onClick={() => changeColor('red')}>Red</h2>
+        <h2 style={{color:'blue'}} onClick={() => changeColor('blue')}>Blue</h2>
+        <h2 style={{color:'green'}} onClick={() => changeColor('green')}>Green</h2>
+        <h2 style={{color:'purple'}} onClick={() => changeColor('purple')}>Purple</h2>
+        <h2 style={{color:'pink'}} onClick={() => changeColor('pink')}>Pink</h2>
 
-        <Colors changeColor={changeColor}/>
-
+        </div>
       </div>
     
   );
