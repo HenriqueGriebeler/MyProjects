@@ -13,12 +13,11 @@ const Select = () => {
   </div>
 }
 
-const [Color, setColor] = useState('')
+const [Color, setColor] = useState('black')
 
-const changeColor = (color) => { //PRECISO FAZER ESSE color RETORNAR A COR CLICADA EM CHANGECOLOR, assim que tiver isso vai funcionar...
+const changeColor = () => { //PRECISO FAZER ESSE color RETORNAR A COR CLICADA EM CHANGECOLOR, assim que tiver isso vai funcionar...
   //setColor(color)
-  console.log(color)
-
+  
 }
 
   return (
@@ -26,7 +25,7 @@ const changeColor = (color) => { //PRECISO FAZER ESSE color RETORNAR A COR CLICA
       
       <Select />
 
-        <Colors changeColor={changeColor()}/>
+        <Colors changeColor={changeColor}/>
 
       </div>
     
