@@ -1,5 +1,4 @@
 import './App.css';
-//import {Colors} from './Colors.js'
 import { useState } from 'react'
 function App() {
 
@@ -17,7 +16,7 @@ const [Text, setTextColor] = useState('black')
 
 const changeColor = (color) => { 
   setTextColor(color)
-  console.log(Text)
+  
 }
 
   return (
