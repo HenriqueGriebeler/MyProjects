@@ -20,9 +20,15 @@
 
     cursor: pointer;
 
-} #j2 {
+} #j1 {
 
+    cursor: pointer;
+
+}#imenu2 {
+
+    width: 91%;
     display: none;
+    margin: auto;
 
 } .page{
 

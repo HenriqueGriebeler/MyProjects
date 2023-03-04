@@ -18,5 +18,15 @@ function showP(){
 
 }
 
+function showP2(){
+    if(imenu2.style.display == 'block'){
+        imenu2.style.display = 'none'
+    } else {
+    imenu2.style.display = 'block'
+
+    }
+
+}
+
 var pagina = 1
 
