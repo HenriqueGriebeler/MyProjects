@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+
+  margin: 0px;
+  padding: 0px;
+  color: aliceblue; /* COLOCAR A FONT DO DRAGON BALL DPS */
+  
+
+} html {
+
+  background-color: black;
+
+} main {
+
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  
+} span {
+
+  cursor: pointer;
+  
+} 
