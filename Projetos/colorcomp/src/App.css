@@ -32,4 +32,11 @@ font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-color: rgba(56, 56, 56, 0.103);
 
+} #colorPicker {
+
+  position: absolute;
+  display: block;
+  transform: translate(100%, 1%);
+
+
 }
