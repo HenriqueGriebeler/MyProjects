@@ -5,11 +5,11 @@ padding: 0px;
 
 } html, body {
 
-background-color: black;
+
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 
-} h2 {
+} h1, h2 {
 
   margin: 20px;
 
@@ -21,9 +21,17 @@ font-family: Arial, Helvetica, sans-serif;
 } .colorArea {
 
   margin: auto;
-  width: 200px;
+  width: 250px;
   height: 50px;
-  border: 1px solid white;
+  
+
+} .colorAreaLorem {
+
+  margin: auto;
+  margin: 20px;
+  width: 200px;
+  padding: 25px;
+  display: inline-block;
 
 } .colorArea:hover {
 
@@ -31,12 +39,21 @@ font-family: Arial, Helvetica, sans-serif;
   content: "Copy";
   color: white;
   background-color: rgba(56, 56, 56, 0.103);
+  
 
 } #colorPicker {
 
   position: absolute;
   display: block;
-  transform: translate(100%, 1%);
+  left: 35%;
 
+} #whiteFont, #blackFont {
 
-}
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+
+} #blackFont {
+
+  color: black;
+
+} 
