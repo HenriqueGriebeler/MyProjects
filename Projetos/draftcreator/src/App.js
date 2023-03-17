@@ -4,13 +4,16 @@ import './App.css';
 function App() {
   
   const [mousePosition, setMousePosition] = useState({})
+  const [id, setId] = useState([0])
   const paintCircle = () => {
-    
-  console.log(mousePosition)
+  
+    setId([mousePosition])
+
+  console.log(id)
 }
+
 const handleMouseMove = (event) => {
   setMousePosition({x: event.clientX, y: event.clientY})
-  
 }
 window.addEventListener('mousemove', handleMouseMove)
 
