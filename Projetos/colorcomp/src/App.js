@@ -14,9 +14,6 @@ function App() {
 const openColorPicker = () => {
   colorPicker ? showColorPicker(false) : showColorPicker(true)
 }
-    
-
-
 
     return <div>
       <main>
