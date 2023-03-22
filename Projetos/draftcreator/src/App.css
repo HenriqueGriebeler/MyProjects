@@ -20,4 +20,10 @@ padding: 0px;
   width: 100vw;
   height: 100vh;  
 
+} #colorPicker {
+
+  position: absolute;
+  display: block;
+  left: 35%;
+
 }
