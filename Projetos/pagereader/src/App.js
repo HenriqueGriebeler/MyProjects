@@ -36,23 +36,29 @@ const ChapterFrame = (props) => {
   let actualPage = props.props
 
 const pageBack = () => {
-  actualPage <= 0 ? actualPage=0 : setPage(actualPage-=1)
+  actualPage <= 0 ? actualPage = 0 : setPage(actualPage-=1)
   }
 const pageNext = () => {
-  actualPage >=allPages ? actualPage=allPages : setPage(actualPage+=1)
+  actualPage >= allPages ? actualPage=allPages : setPage(actualPage+=1)
   }
 
   return <div>
     
     <p style={{margin: '10px', fontSize: '1.8em'}}> <span class="material-symbols-outlined" onClick={pageBack} style={{color: actualPage <= 0 ? 'gray' : 'white'}}> arrow_back_ios </span>
     {indexPage} <span class="material-symbols-outlined" onClick={pageNext} style={{color: actualPage >= allPages ? 'gray' : 'white'}}> arrow_forward_ios </span></p>
+
     <img src={require('./manga/'+indexPage+'.png')}/>
+    
   </div>
 }
+
+
   return (
     <div className="App">
         <Main />
     </div>
   );
 }
+
+
 export default App;
