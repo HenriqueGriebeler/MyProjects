@@ -7,6 +7,7 @@
 
 } section {
 
+    flex-grow: 1;
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -19,19 +20,27 @@
 
 } div {
 
-    min-width: 25%;
     height: 5vh;
 
 } .firstPanel {
 
-    width: 32.5%;
+    width: 200px;
+    flex-grow: 1;
 
 } .secondPanel {
 
-    width: 49%;
+    width: 200px;
+    flex-grow: 1;
 
 } #panel6 {
 
-    width: 98.3%;
+    width: 200px;
+    flex-grow: 1;
+
+} #frame {
+
+    width: 95%;
+    text-align: center;
+    margin: auto;
 
 }
