@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+
+}html, body {
+
+    --color1: #424242;
+    --color2: #DBDBDB;
+    background-color: var(--color1);
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    
+
+} header {
+
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    background-image:url(images/1920-desktop-source-code-and-wallpaper-by-coding-and-programming.jpg);
+    
+} section {
+
+    padding: 20px;
+    padding-left: 4vw;
+    width: 49%;
+    text-align: justify;
+    text-indent: .5em;
+
+} #sectionP1 {
+
+    margin-top: 20px;
+    font-size: 1.3em;
+
+} #boxFrame {
+
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+}.box {
+    
+    width: 240px;
+    margin: 2%;
+    border:  solid var(--color2);
+    border-radius: 15px;
+    cursor: pointer;
+    
+    
+} .boxImage {
+
+    max-width: 75px;
+    max-height: 75px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+} #boxFlex {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}   @media (max-width: 344px){
+    
+    section {
+
+        width: 90%;
+        text-align: center;
+
+    }
+
+}
