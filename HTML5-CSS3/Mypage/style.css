@@ -22,10 +22,21 @@
     display: flex;
     align-items: center;
     background-color: black;
+    transition: filter .8s;
+    z-index: 1;
+    
+} #imageFirst{
+
+    width: 100%;
+    height: 80vh;
+    position: absolute;
     overflow: hidden;
-    background-size: cover;
-    background-image:url(images/1920-desktop-source-code-and-wallpaper-by-coding-and-programming.jpg);
-    transition: transform .2s;
+    z-index: 0;
+    transition: filter .8s;
+
+} #imageFirst:hover {
+
+    filter: blur(5px);
 
 } section {
 
@@ -37,11 +48,7 @@
     text-align: left;
     text-indent: .5em;
 
-} header:hover{
-
-    transform: scale(1.1);
-
-}  #sectionP1 {
+} #sectionP1 {
 
     text-align: justify;
     margin-top: 20px;
@@ -49,15 +56,19 @@
 
 } #myName{
 
-    filter: blur(no);
     transition: filter, transform .2s; 
+    z-index: 1;
 
 }#myName:hover{
 
     transform: scale(1.1);
     text-shadow: 2px 2px black;
 
-}#myStart {
+}#myName:hover > #imageFirst{
+
+    filter: blur(5px);
+
+} #myStart {
 
     margin: auto;
     width: 95%;
