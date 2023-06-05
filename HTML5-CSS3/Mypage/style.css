@@ -103,7 +103,14 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
-}   @media (max-width: 344px){
+} .language{
+
+    font-size: 1.4em;
+    max-width: 600px;
+    margin: auto;
+    display: none;
+
+}  @media (max-width: 344px){
     
     section {
 
