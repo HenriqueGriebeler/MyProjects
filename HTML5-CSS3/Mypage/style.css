@@ -82,7 +82,7 @@
     
     width: 240px;
     margin: 2%;
-    border:  solid var(--color2);
+    /*border:  solid var(--color2);*/
     border-radius: 15px;
     cursor: pointer;
     
@@ -94,6 +94,23 @@
     display: block;
     margin: auto;
     padding: 10px;
+    
+
+} .boxImage:hover {
+
+    animation: frame 1.5s infinite linear;
+
+} @keyframes frame {
+
+    0%{
+        transform: translateX(0px);
+    } 25%{
+        transform: translateX(10px);
+    } 75%{
+        transform: translateX(-10px);
+    } 100%{
+        transform: translateX(0px)
+    }
 
 } #boxFlex {
 
