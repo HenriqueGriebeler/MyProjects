@@ -8,4 +8,13 @@ function showDescript(x){
 
     x.style.display = 'block'
 
+} 
+
+x = 0
+
+function changeTheme(){
+x==0 ? x=1 : x=0
+
+ x==1 ? document.getElementById('imageFirst').src = 'images/hexagonWithColor.gif' : document.getElementById('imageFirst').src = 'images/hexagonBlack.gif'
+    
 }
