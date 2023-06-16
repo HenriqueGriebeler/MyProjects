@@ -117,7 +117,13 @@
     display: block;
     margin: auto;
     padding: 10px;
+    filter: grayscale(100%);
+    transition: .5s;
     animation: frame 1.5s infinite linear;
+
+} .boxImage:hover{
+
+    filter: grayscale(0%);
 
 } @keyframes frame {
 
@@ -195,5 +201,18 @@
         height: 270px;
 
     }
+
+} .findMe{
+
+    max-width: 95px;
+    max-height: 95px;
+    transition: .5s;
+    margin: 45px;
+    filter: grayscale(100%);
+
+} .findMe:hover{
+
+    filter: grayscale(0%);
+    scale: 1.2;
 
 }
