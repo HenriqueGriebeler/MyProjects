@@ -1,3 +1,13 @@
+function displayName(){
+    var myname = document.getElementById('myName')
+    myname.innerText = ''
+    var nameTyped = 'Henrique Griebeler'
+
+    for(let i = 0; 0 < nameTyped.length; i++){
+        myname.innerText += nameTyped[i]
+    }
+}
+
 function showDescript(x){
 
     document.getElementById('tecnologyBelow').style.display = 'none'
