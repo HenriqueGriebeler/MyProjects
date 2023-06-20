@@ -17,7 +17,7 @@ function showDescript(x){
     document.getElementById('langREACTJS').style.display = 'none'
 
     x.style.display = 'block'
-
+    
 } 
 
 x = 0
