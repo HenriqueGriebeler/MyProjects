@@ -19,7 +19,11 @@ function showDescript(x,y){
     x.style.display = 'block'
     y.style.filter = 'none'
     
-} 
+} function getColor(x){
+
+    x.style.filter = 'none'
+
+}
 
 x = 0
 
