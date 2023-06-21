@@ -40,5 +40,6 @@ x==0 ? x=1 : x=0
     document.getElementById('css3').style.display = 'block'
     document.getElementById('js').style.display = 'block'
     document.getElementById('reactjs').style.display = 'block'
+    document.getElementById('changeColor').style.display = 'block'
 
 }

@@ -105,9 +105,9 @@
     
     width: 240px;
     margin: 2%;
+    margin-top: 7%;
     /*border:  solid var(--color2);*/
     border-radius: 15px;
-    cursor: pointer;
     
 } .boxImage {
 
@@ -120,6 +120,7 @@
     transition: .5s;
     animation: frame 1.5s infinite linear;
     display: none;
+    cursor: pointer;
 
 } .boxImage:hover{
 
