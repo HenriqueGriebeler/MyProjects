@@ -30,6 +30,7 @@ x==0 ? x=1 : x=0
     
 } function runTechnologies(){
 
+    document.getElementById('changeColor').style.display = 'block'
     document.getElementById('tecnologyBelow').style.display = 'block'
     document.getElementById('langHTML').style.display = 'none'
     document.getElementById('langCSS').style.display = 'none'
@@ -40,6 +41,5 @@ x==0 ? x=1 : x=0
     document.getElementById('css3').style.display = 'block'
     document.getElementById('js').style.display = 'block'
     document.getElementById('reactjs').style.display = 'block'
-    document.getElementById('changeColor').style.display = 'block'
-
+    
 }
