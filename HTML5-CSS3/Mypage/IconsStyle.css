@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#menu {
+
+    position: absolute;
+    font-size: 2em;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    color: gray;
+    transition: .5s;
+    
+    
+} #menu:hover{
+
+    color: white;
+    transform: rotate(90deg);
+
+}
