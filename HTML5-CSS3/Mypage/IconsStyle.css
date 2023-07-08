@@ -1,19 +1,27 @@
 @charset "UTF-8";
 
-#menu {
+span {
 
-    position: absolute;
+    position: fixed;
     font-size: 2em;
     top: 5px;
     left: 5px;
     cursor: pointer;
     color: gray;
     transition: .5s;
+    animation: frames .5s;
     
-    
-} #menu:hover{
+} span:hover {
 
     color: white;
-    transform: rotate(90deg);
+
+} @keyframes frames {
+
+    0%{
+        transform: translateX(-10px);
+        opacity: 0%;
+    } 100%{
+        opacity: 100%;
+    }
 
 }

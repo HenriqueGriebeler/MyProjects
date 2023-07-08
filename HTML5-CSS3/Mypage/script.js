@@ -46,4 +46,15 @@ x==0 ? x=1 : x=0
     document.getElementById('js').style.display = 'block'
     document.getElementById('reactjs').style.display = 'block'
     
+} 
+
+function openMenu(){
+
+    document.getElementById('menu').style.color = 'white'
+    document.getElementById('menu').style.transform = 'rotate(90deg)'
+    const icones = document.getElementsByTagName('span');
+    for(let i = 0; i < icones.length; i++){
+        icones[i].style.display = 'block';
+    }
+
 }
