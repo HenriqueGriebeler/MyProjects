@@ -50,11 +50,16 @@ x==0 ? x=1 : x=0
 
 function openMenu(){
 
+    //BOTAR UM IF AQUI IGUAL EM MENUS
     document.getElementById('menu').style.color = 'white'
     document.getElementById('menu').style.transform = 'rotate(90deg)'
     const icones = document.getElementsByTagName('span');
     for(let i = 0; i < icones.length; i++){
         icones[i].style.display = 'block';
     }
+
+} function scrollDown(x){
+
+    document.getElementById(x).scrollIntoView();
 
 }
