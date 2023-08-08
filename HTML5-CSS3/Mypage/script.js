@@ -23,7 +23,8 @@ function showDescript(x,y){
 
     x.style.filter = 'none'
 
-}
+} 
+
 
 x = 0
 
@@ -49,17 +50,31 @@ x==0 ? x=1 : x=0
 } 
 
 function openMenu(){
-
+                                //OS ICONES SUMINDO NAO FICARAM NATURAIS, vou ver se tem algum jeito de chamar uma animação
     //BOTAR UM IF AQUI IGUAL EM MENUS
-    document.getElementById('menu').style.color = 'white'
-    document.getElementById('menu').style.transform = 'rotate(90deg)'
-    const icones = document.getElementsByTagName('span');
+   const menu = document.getElementById('menu')
+    const icones = document.getElementsByTagName('span')
+
+if(icones[1].style.display === 'block'){
+    
+    for(let i = 0; i < icones.length; i++){
+        icones[i].style.display = 'none';
+        menu.style.display = 'block'
+    }
+    menu.style.color = 'gray'
+    menu.style.transform = 'rotate(0deg)'
+} else{
+    menu.style.color = 'white'
+    menu.style.transform = 'rotate(90deg)'
+
     for(let i = 0; i < icones.length; i++){
         icones[i].style.display = 'block';
     }
+}
+} 
 
-} function scrollDown(x){
+function scrollDown(x){
 
     document.getElementById(x).scrollIntoView();
 
-}
+} 

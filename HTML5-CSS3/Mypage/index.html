@@ -47,13 +47,12 @@
       <div> <!-- BEGIN OF THE BOXES -->
         <div id="headerIcons">
         <span id='menu' onclick="openMenu()" class="material-symbols-outlined">menu</span> <!-- BEGIN OF MENU ICONS-->
-        <span class="material-symbols-outlined" style="display: none; left: 50px;">home</span>
+        <span onclick="scrollDown('imageFirst')" class="material-symbols-outlined" style="display: none; left: 50px;">home</span>
         <span onclick="scrollDown('myStart')" class="material-symbols-outlined" style="display: none; left: 90px;">person</span>
-        <span class="material-symbols-outlined" style="display: none; left: 130px;">menu_book</span>
-        <span class="material-symbols-outlined" style="display: none; left: 170px;">settings_alert</span>
+        <span onclick="scrollDown('knownTecno')" class="material-symbols-outlined" style="display: none; left: 130px;">menu_book</span>
+        <span onclick="scrollDown('howToFindMe')" class="material-symbols-outlined" style="display: none; left: 170px;">settings_alert</span>
       </div>
-        
-        
+      
         <main>
           <br>
           <div id="myStart">
@@ -65,7 +64,7 @@
           </div>
           <br>
           <br>
-    <h1 style="padding-top: 10px; text-align: center">known technologies</h1>
+    <h1 style="padding-top: 10px; text-align: center" id="knownTecno">known technologies</h1>
 <br>
           <div id='boxFrame'>
             <h2 id="tecnologyBelow" style="display: none;">Click at a tecnology below:
@@ -103,12 +102,12 @@
 
 
             <div style="text-align: center;">
-
+              <div id="howToFindMe"></div>
               <h2>A little about me</h2>
               <br>
                   <!--PUT A BOX WITH MORE DETAILS ABOUT ME AND MY STUDY PERIOD, AND SOME PROJECTS, ITS TO SHOW SOME TOOLS AND NEW WAYS TO CREATE A GOOD WEBSITE-->
           <p></p>
-
+              
             <h2 style="margin-bottom: 50px;">How to find me?</h2>
 
               <h3>Select the best for you!</h3>
