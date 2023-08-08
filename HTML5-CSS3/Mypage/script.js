@@ -57,18 +57,19 @@ function openMenu(){
 
 if(icones[1].style.display === 'block'){
     
-    for(let i = 0; i < icones.length; i++){
-        icones[i].style.display = 'none';
-        menu.style.display = 'block'
-    }
+    for(let i = 1; i < icones.length; i++){
+        icones[i].classList.add('disappear')
+    } 
     menu.style.color = 'gray'
     menu.style.transform = 'rotate(0deg)'
 } else{
     menu.style.color = 'white'
     menu.style.transform = 'rotate(90deg)'
 
-    for(let i = 0; i < icones.length; i++){
-        icones[i].style.display = 'block';
+    for(let i = 1; i < icones.length; i++){
+        icones[i].classList.remove('disappear')
+        icones[i].style.display = 'block'
+        
     }
 }
 } 

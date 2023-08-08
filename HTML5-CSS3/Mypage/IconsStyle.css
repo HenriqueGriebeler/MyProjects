@@ -10,6 +10,7 @@ span {
     color: gray;
     transition: .5s;
     animation: frames .5s;
+    display: block;
     
 } span:hover {
 
@@ -23,5 +24,11 @@ span {
     } 100%{
         opacity: 100%;
     }
+
+} .disappear {
+
+    transition: .5s;
+    opacity: 0%;
+    display: 'none';
 
 }
