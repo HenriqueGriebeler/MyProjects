@@ -48,30 +48,34 @@ x==0 ? x=1 : x=0
     document.getElementById('reactjs').style.display = 'block'
     
 } 
+let menuId = 0
 
 function openMenu(){
-                                //OS ICONES SUMINDO NAO FICARAM NATURAIS, vou ver se tem algum jeito de chamar uma animação
+
     //BOTAR UM IF AQUI IGUAL EM MENUS
    const menu = document.getElementById('menu')
     const icones = document.getElementsByTagName('span')
 
-if(icones[1].style.display === 'block'){
+    if(menuId == 0){
+        menu.style.color = 'white'
+        menu.style.transform = 'rotate(90deg)'
+    
+        for(let i = 1; i < icones.length; i++){
+    
+            icones[i].style.display = 'block'
+            icones[i].classList.remove('disappear')
+        }
+        menuId = 1
+    }   
+else if(menuId == 1){
     
     for(let i = 1; i < icones.length; i++){
         icones[i].classList.add('disappear')
     } 
     menu.style.color = 'gray'
     menu.style.transform = 'rotate(0deg)'
-} else{
-    menu.style.color = 'white'
-    menu.style.transform = 'rotate(90deg)'
-
-    for(let i = 1; i < icones.length; i++){
-        icones[i].classList.remove('disappear')
-        icones[i].style.display = 'block'
-        
-    }
-}
+    menuId = 0
+} 
 } 
 
 function scrollDown(x){
