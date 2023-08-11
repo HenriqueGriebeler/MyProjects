@@ -6,7 +6,12 @@
     margin: 0px;
     padding: 0px;
 
-}html, body {
+} ::selection{
+
+    
+background-color: #FFDF00;
+
+} html, body {
 
     --color1: #424242;
     --color2: #DBDBDB;
