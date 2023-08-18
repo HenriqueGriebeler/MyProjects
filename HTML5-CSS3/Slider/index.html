@@ -8,21 +8,24 @@
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onload="bannerCompile()">
     <header>
  <!--Here goes the logo and all the icons-->
     </header>
     <main>
         <div id="slider">
-
+            <img class="bannerImage" id="onScreen" src="styles/fundo01.jfif" alt="Cick to access">
+            <img class="bannerImage" id="offScreen" src="styles/fundo02.jfif" alt="Cick to access">
+            <img class="bannerImage" id="offScreen" src="styles/banner1.jfif" alt="Cick to access">
+            <button onclick="a()">TEST ID</button>
         </div>
     </main>
     <div id="icons">
 
         <!--ICONS FOR POSTERIOR USE-->
 
-        <span class="material-symbols-outlined">arrow_back_ios</span>
-        <span class="material-symbols-outlined">arrow_forward_ios</span>
+        <span class="material-symbols-outlined center-icons">arrow_back_ios</span>
+        <span class="material-symbols-outlined center-icons">arrow_forward_ios</span>
     </div>
 </body>
 </html>

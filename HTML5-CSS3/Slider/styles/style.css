@@ -19,4 +19,20 @@ width: 100%;
 height: 450px;
 background-color: violet;
 
+} #icons {
+
+
+margin-top: 15px;
+text-align: center;
+cursor: pointer;
+
+} #offScreen {
+
+    display: none;
+
+} #onScreen {
+
+width: 100%;
+height: 450px;
+
 }
