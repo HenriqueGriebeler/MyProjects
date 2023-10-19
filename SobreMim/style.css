@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* { 
+
+    margin: 0;
+    padding: 0;
+    color: #D5D3CE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}  body {
+
+    background-color: #202020;
+
+} header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #1a1717;
+
+} header p {
+
+    margin: 5px;
+
+} a {
+
+    text-decoration: none;
+
+}
