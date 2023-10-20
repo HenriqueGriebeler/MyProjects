@@ -33,10 +33,21 @@ background-color: #FFDF00;
 
 } .paragrafo {
 
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     text-align: justify;
     margin-bottom: 10px;
     text-indent: 10px;
+
+} .centralize {
+
+    margin: auto;
+    text-align: center;
+    
+
+} img {
+
+    max-width: 150px;
+    max-height: 150px;
 
 }
