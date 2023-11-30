@@ -1,0 +1,16 @@
+Bora pensar
+
+1 - Local de coleta
+2 - Roupa enviada
+3 - Usuário que vai buscar
+
+
+Páginas necessárias:
+
+1 - Página Home, onde verificamos o usuário atual e dizemos qual nosso objetivo 'Busca doações' 'É um doador' ou 'Deseja cadastrar um ponto de coleta?' posso usar uma interface semelhante a página inicial da NuInvest mobile
+
+2 - Página do doador, vai permitir escrever tudo que vai doar, definir uma quantidade em um campo numérico e dar detalhes da peça, por fim, vai selecionar o ponto de coleta
+
+3 - Cadastro de ponto de coleta, deixando o endereço salvo e detalhes para doadores entregarem as roupas. Tendo um ponto cadastrado, pode estar cadastrando as roupas pelo próprio site, assim quem precisa vai sabeer.
+
+4 - E mais importante, página para o receptor da doação, está deve ser simples e de fácil entendimento, tendo visualização das roupas disponíveis para doação, junto a uma opção de contato e opção de selecionar a roupa, se a roupa estiver selecionada, não deve aparecer para novos usuários, e caso o user selecione e não busque a roupa, o  dono do posto pode cancelar está requisição, ou ent ter um tempo limite, se em até dois dias não buscar, a roupa fica disponível novamente.
