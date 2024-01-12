@@ -19,8 +19,29 @@
   </div>
 </main>
 
-    <div id="clotes">
-    <input type="text" name="Roupas" id="1" placeholder="Camiseta PP azul claro"> <input id="newClote" onclick="addNewClote()" type="button" value="Adicionar outra peça">
+    <input type="text" id="inputItem" placeholder="Camiseta M Azul básica">
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <ul id="listaItens"></ul>
+
+
     </div>
 </body>
 </html>
+
+<style>
+
+button {
+
+  padding: 3px;
+
+
+} li {
+
+  background-color: rgb(192, 192, 192);
+  text-decoration: none;
+  color: black;
+
+}
+
+</style>
