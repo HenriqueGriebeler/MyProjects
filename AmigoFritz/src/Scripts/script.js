@@ -43,7 +43,7 @@ function save(){
 
     clotes = document.getElementById('listaItens').innerHTML;
 
-    localStorage[clotes] = clotes;
+    localStorage.setItem("clotes", clotes);
     console.log(clotes)
 
 }
