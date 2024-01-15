@@ -4,6 +4,7 @@ function adicionarItem() {
     var novoItem = document.getElementById("inputItem").value;
 
     if (novoItem.trim() !== "") {
+        document.getElementById('sendClotes').style.display = 'block';
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(novoItem));
 
@@ -36,4 +37,13 @@ function excluirItem(item) {
     
         item.parentNode.removeChild(item);
     
+}
+
+function save(){
+
+    clotes = document.getElementById('listaItens').innerHTML;
+
+    localStorage[clotes] = clotes;
+    console.log(clotes)
+
 }
