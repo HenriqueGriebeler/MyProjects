@@ -45,5 +45,5 @@ function save(){
 
     localStorage.setItem("clotes", clotes);
     console.log(clotes)
-
+    document.getElementById("localEntrega").style.display = 'block';
 }
