@@ -109,4 +109,8 @@ overflow: hidden;
 
   background-color: white;
 
+} .first {
+
+  transition: 1s;
+
 }
