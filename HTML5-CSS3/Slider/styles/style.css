@@ -7,16 +7,26 @@ padding: 0px;
 
 }
 
-header {
+ h1 {
+
+  color: #FFF;
+ 
+  font-size: 1.4em;
+  
+
+ } header {
 
 width: 100%;
 height: 60px;
 background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
 
 } main {
 
 margin: 0 auto;
-width: 800px;
+width: 100vw;
 height: 450px;
 
 overflow: hidden;
@@ -34,17 +44,18 @@ overflow: hidden;
 
 } .slide {
 
-  width: 25%;
+  width: 100vw;
   position: relative;
 
 } .slide img {
 
-  width: 800px;
+  width: 100vw;
+  height: 450px;
 
 } .manual-navigation {
 
   position: absolute;
-  width: 800px;
+  width: 100vw;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -88,7 +99,7 @@ overflow: hidden;
 } .navigation{
 
   position: absolute;
-  width: 800px;
+  width: 100vw;
   margin-top: 410px;
   display: flex;
   justify-content: center;
