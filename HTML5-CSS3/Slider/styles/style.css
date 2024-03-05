@@ -10,7 +10,7 @@ padding: 0px;
  h1 {
 
   color: #FFF;
- 
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   
 
@@ -37,6 +37,7 @@ overflow: hidden;
   height: 450px;
   display: flex;
   background-color: violet;
+  cursor: pointer;
 
 } .slides input {
 
