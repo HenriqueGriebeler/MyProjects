@@ -23,6 +23,7 @@ header{
     font-size: 10vw;
 
 } header > p{ /* CABEÇALHO */
+
     text-align: center;
     font-size: 1em;
     color: white;
@@ -30,27 +31,38 @@ header{
     padding-bottom: 5vw;
     
 }header > p > a{
+
     color: white;
     text-decoration: none;
     font-weight: bold;
+
 }header > p > a:hover{
+
     text-decoration: underline;
+
 } p{
+
     font-family: 'Courgette';
     font-size: 3.5vw;
     padding-bottom: 5px;
-} section.normal{   /* Falas sem imagem */
+
+} section.normal{  
+    
+    /* Falas sem imagem */
     padding-left: 25px;
     padding-top: 70px;
     line-height: 7vw;
     padding-bottom: 80px;
+
 } section.imagem{   /* Com imagem */
+
     height: 70vw;
     background: black url(imagens/background001.jpg) center right no-repeat fixed;
     background-size: cover;
     min-height: 60vw;
     display: flex;
     box-shadow: 5px 5px 15px black;
+    
 } main{ /* Caixa em frente a imagem */
     background-color: rgba(0, 0, 0, 0.301);
     width: 45vw;
@@ -82,4 +94,25 @@ footer > p > a{
     font-weight: bold;
 } footer > p > a:hover{
     text-decoration: underline;
+}
+
+/*ICONS*/
+
+#languageIcon{
+
+    position: absolute;
+    top: 44px;
+    right: 31px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.356);
+    border-radius: 50%;
+
+} #languageIcon > img {
+
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    cursor: pointer;
+
 }
