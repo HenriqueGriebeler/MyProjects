@@ -47,7 +47,7 @@ function changeToEN(){
 
   p7.innerHTML = "Fortunately, to pray <br> Doesn't need internet <br> God listens to everyone <br> If you want, take this test <br> Two points are two knees <br> Your lips are devices <br> Let God interpret."
 
-  p8.innerHTML = 'Website designed by <a href="https://github.com/HenriqueGriebeler" target="_blank">Henrique Griebeler</a> para <a href="https://github.com/HenriqueGriebeler/html-css/tree/main/exercicios" target="_blank">my repository</a>'
+  p8.innerHTML = 'Website designed by <a href="https://github.com/HenriqueGriebeler" target="_blank">Henrique Griebeler</a> to <a href="https://github.com/HenriqueGriebeler/html-css/tree/main/exercicios" target="_blank">my repository</a>'
 
 }
 function changeToPT(){
