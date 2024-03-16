@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  --color2: #333333;
+  --color1: #1A1A1A;
+
+} html, body {
+
+  background-color: var(--color1);
+
+} .textInput {
+
+ background-color: white;
+ color: black;
+
+} .keyboardButton {
+
+  background-color: var(--color2);
+  width: 140px;
+  height: 40px;
+  border: 0px;
+  cursor: pointer;
+
+} #keyboardBody {
+
+  width: 100vw;
+  height: calc(42vh +2px);
+  background-color: var(--color1);
+  position: absolute;
+  bottom: 1px;
+
+} .normalFloor {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+} .normalKey {
+
+  height: calc(40vh / 5);
+  background-color: var(--color2);
+  margin: 1px;
+  width: calc(100vw / 15);
+  text-align: left;
+
+} .normalKey:hover {
+
+  background-color: #4e4e4e;
+
+} .normalKeyPosition {
+
+  margin-top: 12%;
+  margin-left: 32%;
+
+} .firstOrLastKeyPosition { /*Este se aplica apenas a primeira tecla de cada andar, como Esc, TAB, Caps Lock.... */
+
+  margin-top: 12%;
+  margin-left: 2px;
+
+} .doubleKey {
+
+  height: calc(40vh / 5);
+  background-color: var(--color2);
+  margin: 1px;
+  width: calc(100vw / 11);
+  text-align: left;
+
+} .doubleKey:hover {
+
+  background-color: #4e4e4e;
+
+}
