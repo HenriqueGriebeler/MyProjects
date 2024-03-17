@@ -74,4 +74,12 @@
 
   background-color: #4e4e4e;
 
+} #shift {
+
+  background-color: var(--color2);
+
+}#shift:hover {
+
+ background-color: #4e4e4e;
+
 }

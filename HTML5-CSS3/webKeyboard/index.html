@@ -10,9 +10,9 @@
 <main style="margin: auto; text-align: center;">
   <div>
     <p style="margin: 20px;">
-  <label for="textLabel" class="textLabel" style="cursor: pointer; margin: 10px;">Digite com o teclado web</label>
-  <input type="text" name="textArea" id="text" class="textInput"/>
-</p>
+  <label for="textLabel" class="textLabel" style="cursor: pointer; margin: 10px;">Digite com o teclado web</label></p>
+  <textarea name="textArea" id="text" cols="30" rows="10" placeholder="Digite aqui..." style="background-color: white; color: black;"></textarea>
+
 </div>
 <div>
   <input type="button" value="Abrir teclado" id="textLabel" class="keyboardButton" onclick="keyboard()">
@@ -23,80 +23,78 @@
 
 <div id="keyboardBody" style="display: none;">
   <div class="normalFloor">
-    <div class="normalKey"><div class="firstOrLastKeyPosition">Esc</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">'</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">1</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">2</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">3</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">4</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">5</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">6</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">7</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">8</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">9</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">0</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">-</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">=</div></div>
-    <div class="doubleKey"><div class="firstOrLastKeyPosition">Bks</div></div>
+    <div onclick="type('Esc')" class="normalKey"><div class="firstOrLastKeyPosition">Esc</div></div>
+    <div onclick='type("accent")' class="normalKey"><div class="normalKeyPosition">'</div></div>
+    <div onclick="type('1')" class="normalKey"><div class="normalKeyPosition">1</div></div>
+    <div onclick="type('2')" class="normalKey"><div class="normalKeyPosition">2</div></div>
+    <div onclick="type('3')" class="normalKey"><div class="normalKeyPosition">3</div></div>
+    <div onclick="type('4')" class="normalKey"><div class="normalKeyPosition">4</div></div>
+    <div onclick="type('5')" class="normalKey"><div class="normalKeyPosition">5</div></div>
+    <div onclick="type('6')" class="normalKey"><div class="normalKeyPosition">6</div></div>
+    <div onclick="type('7')" class="normalKey"><div class="normalKeyPosition">7</div></div>
+    <div onclick="type('8')" class="normalKey"><div class="normalKeyPosition">8</div></div>
+    <div onclick="type('9')" class="normalKey"><div class="normalKeyPosition">9</div></div>
+    <div onclick="type('0')" class="normalKey"><div class="normalKeyPosition">0</div></div>
+    <div onclick="type('-')" class="normalKey"><div class="normalKeyPosition">-</div></div>
+    <div onclick="type('=')" class="normalKey"><div class="normalKeyPosition">=</div></div>
+    <div onclick="Bks()" class="doubleKey"><div class="firstOrLastKeyPosition">Bks</div></div>
   </div>
   <div class="normalFloor">
-    <div class="doubleKey"><div class="firstOrLastKeyPosition">Tab</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">q</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">w</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">e</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">r</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">t</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">y</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">u</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">i</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">o</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">p</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">´</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">[</div></div>
-    <div class="doubleKey"><div class="firstOrLastKeyPosition">Enter</div></div>
+    <div onclick="type('    ')" class="doubleKey"><div class="firstOrLastKeyPosition">Tab</div></div>
+    <div onclick="type('q')" class="normalKey"><div class="normalKeyPosition">q</div></div>
+    <div onclick="type('w')" class="normalKey"><div class="normalKeyPosition">w</div></div>
+    <div onclick="type('e')" class="normalKey"><div class="normalKeyPosition">e</div></div>
+    <div onclick="type('r')" class="normalKey"><div class="normalKeyPosition">r</div></div>
+    <div onclick="type('t')" class="normalKey"><div class="normalKeyPosition">t</div></div>
+    <div onclick="type('y')" class="normalKey"><div class="normalKeyPosition">y</div></div>
+    <div onclick="type('u')" class="normalKey"><div class="normalKeyPosition">u</div></div>
+    <div onclick="type('i')" class="normalKey"><div class="normalKeyPosition">i</div></div>
+    <div onclick="type('o')" class="normalKey"><div class="normalKeyPosition">o</div></div>
+    <div onclick="type('p')" class="normalKey"><div class="normalKeyPosition">p</div></div>
+    <div onclick="type('´')" class="normalKey"><div class="normalKeyPosition">´</div></div>
+    <div onclick="type('leftBracket')" class="normalKey"><div class="normalKeyPosition">[</div></div>
+    <div onclick="enter()" class="doubleKey"><div class="firstOrLastKeyPosition">Enter</div></div>
   </div>
   <div class="normalFloor">
-    <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Caps</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">a</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">s</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">d</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">f</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">g</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">h</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">j</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">k</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">l</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">ç</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">ã</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">õ</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">]</div></div>
+    <div class="doubleKey" onclick="caps()" id="caps" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Caps</div></div>
+    <div onclick="type('a')" class="normalKey"><div class="normalKeyPosition">a</div></div>
+    <div onclick="type('s')" class="normalKey"><div class="normalKeyPosition">s</div></div>
+    <div onclick="type('d')" class="normalKey"><div class="normalKeyPosition">d</div></div>
+    <div onclick="type('f')" class="normalKey"><div class="normalKeyPosition">f</div></div>
+    <div onclick="type('g')" class="normalKey"><div class="normalKeyPosition">g</div></div>
+    <div onclick="type('h')" class="normalKey"><div class="normalKeyPosition">h</div></div>
+    <div onclick="type('j')" class="normalKey"><div class="normalKeyPosition">j</div></div>
+    <div onclick="type('k')" class="normalKey"><div class="normalKeyPosition">k</div></div>
+    <div onclick="type('l')" class="normalKey"><div class="normalKeyPosition">l</div></div>
+    <div onclick="type('ç')" class="normalKey"><div class="normalKeyPosition">ç</div></div>
+    <div onclick="type('ã')" class="normalKey"><div class="normalKeyPosition">ã</div></div>
+    <div onclick="type('õ')" class="normalKey"><div class="normalKeyPosition">õ</div></div>
+    <div onclick='type("rightBracket")' class="normalKey"><div class="normalKeyPosition">]</div></div>
   </div>
   <div class="normalFloor">
-    <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Shift</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">\</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">z</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">x</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">c</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">v</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">b</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">n</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">m</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">,</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">.</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">;</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">/</div></div>
-    <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Shift</div></div>
+    <div onclick="shiftOn()" id="shift" class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Shift</div></div>
+    <div onclick="type('invertedBar')" class="normalKey"><div class="normalKeyPosition">\</div></div>
+    <div onclick="type('z')" class="normalKey"><div class="normalKeyPosition">z</div></div>
+    <div onclick="type('x')" class="normalKey"><div class="normalKeyPosition">x</div></div>
+    <div onclick="type('c')" class="normalKey"><div class="normalKeyPosition">c</div></div>
+    <div onclick="type('v')" class="normalKey"><div class="normalKeyPosition">v</div></div>
+    <div onclick="type('b')" class="normalKey"><div class="normalKeyPosition">b</div></div>
+    <div onclick="type('n')" class="normalKey"><div class="normalKeyPosition">n</div></div>
+    <div onclick="type('m')" class="normalKey"><div class="normalKeyPosition">m</div></div>
+    <div onclick="type(',')" class="normalKey"><div class="normalKeyPosition">,</div></div>
+    <div onclick="type('.')" class="normalKey"><div class="normalKeyPosition">.</div></div>
+    <div onclick="type(';')" class="normalKey"><div class="normalKeyPosition">;</div></div>
+    <div onclick="type('/')" class="normalKey"><div class="normalKeyPosition">/</div></div>
+    <div onclick="shift()" class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Shift</div></div>
   </div>  
   <div class="normalFloor">
     <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Ctrl</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">Alt</div></div>
+    <div onclick="type('')" class="doubleKey"><div class="firstOrLastKeyPosition">Alt</div></div>
     
-    <div class="doubleKey" style="width: calc(100vw / 2);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;"></div></div>
-    <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Home</div></div>
-    <div class="doubleKey" style="width: calc(100vw / 8);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">End</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">ª</div></div>
-    <div class="normalKey"><div class="normalKeyPosition">º</div></div>
-    <div class="normalKey"><div class="firstOrLastKeyPosition" style="margin-top: 16%;">Del</div></div>
+    <div onclick="type(' ')" class="doubleKey" style="width: calc(100vw / 1.5);"><div class="firstOrLastKeyPosition" style="margin-top: 9%;"></div></div>
+    <div onclick="type('ª')" class="normalKey"><div class="normalKeyPosition">ª</div></div>
+    <div onclick="type('º')" class="normalKey"><div class="normalKeyPosition">º</div></div>
+    <div onclick="clean()" style="width: calc(100vw / 8);" class="normalKey"><div class="firstOrLastKeyPosition" style="margin-top: 9%;">Clean</div></div>
 </div>
 
 </div>
