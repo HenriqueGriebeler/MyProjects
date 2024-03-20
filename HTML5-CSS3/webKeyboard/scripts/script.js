@@ -56,11 +56,13 @@ let shift = false;
 function shiftOn(){
   
   //Troca a cor do botão shift
+
  if(shift == false){ 
   capsLock = false
   capsOff()
   shift = true;
 document.getElementById('shift').style.backgroundColor = '#4e4e4e'
+document.getElementById('rightShift').style.backgroundColor = '#4e4e4e'
 
   // Seleciona todos os elementos com a classe 'normalKey'
 var allNormalKeys = document.querySelectorAll('.normalKeyPosition');
@@ -81,6 +83,7 @@ allNormalKeys.forEach(function(allNormalKey) {
   capsOff()
   //Faz a cor do botão voltar ao normal
   document.getElementById('shift').style.backgroundColor = '#333333'
+  document.getElementById('rightShift').style.backgroundColor = '#333333'
 
 var allNormalKeys = document.querySelectorAll('.normalKeyPosition');
 
