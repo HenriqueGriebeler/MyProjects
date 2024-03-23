@@ -10,29 +10,62 @@ keys = []
 function type(a){
 
 if(a == 'invertedBar'){
+
   keys.push(String.fromCharCode(92)); //93
   text.value = keys.join('')
+
 } else if(a == 'rightBracket'){
+
   keys.push(String.fromCharCode(93));
   text.value = keys.join('')
+
+} else if(a == 'aspasDuplas'){
+
+  keys.push(String.fromCharCode(34))
+  text.value = keys.join('')
+
 } else if(a == 'leftBracket'){
+
   keys.push(String.fromCharCode(91));
   text.value = keys.join('')
+
 } else if(a == 'accent'){
+
   keys.push(String.fromCharCode(39));
   text.value = keys.join('')
 
+} else if(a == 'parentheses'){
+
+  keys.push(String.fromCharCode(40))
+  text.value = keys.join('')
+  
+} else if(a == 'rightParentheses'){
+
+  keys.push(String.fromCharCode(41))
+  text.value = keys.join('')
+  
+} else if(a == 'leftKey'){
+
+  keys.push('{')
+  text.value = keys.join('')
+  
+} else if(a == 'rightKey'){
+
+  keys.push('}')
+  text.value = keys.join('')
+  
 } else{
-if(shift == false && capsLock == false){
+
+if(shift == false && capsLock == false || shift == true && capsLock == true){
   keys.push(a.toLowerCase())
 }else{
   keys.push(a.toUpperCase())
 }
 text.value = keys.join('')
+}
 if(capsLock == false && shift == true){
-shiftOff()
-}
-}
+  shiftOff()
+  }
 } 
 
 function clean(){
@@ -55,23 +88,55 @@ let shift = false;
 
 function shiftOn(){
   
-  //Troca a cor do botão shift
-
  if(shift == false){ 
-  capsLock = false
-  capsOff()
+
+  //capsLock = false
+  //capsOff()
   shift = true;
+
+    //Troca a cor do botão shift
+
 document.getElementById('shift').style.backgroundColor = '#4e4e4e'
 document.getElementById('rightShift').style.backgroundColor = '#4e4e4e'
 
+  // ESCONDE OS NUMEROS E MOSTRA OS SINAIS:
+
+document.getElementById('numeric').style.display = 'none';
+document.getElementById('specialNumeric').style.display = 'flex';
+
   // Seleciona todos os elementos com a classe 'normalKey'
+
 var allNormalKeys = document.querySelectorAll('.normalKeyPosition');
 
 allNormalKeys.forEach(function(allNormalKey) {
     
   allNormalKey.textContent = allNormalKey.textContent.toUpperCase();
 
-})} else { 
+})
+
+//ALTERANDO TECLAS ESPECIAIS
+
+document.getElementById('normalAccent').style.display = 'none';
+document.getElementById('invertedAccent').style.display = 'flex';
+
+document.getElementById('leftBracket').style.display = 'none';
+document.getElementById('leftKey').style.display = 'flex';
+
+document.getElementById('rightBracket').style.display = 'none';
+document.getElementById('rightKey').style.display = 'flex';
+
+  //SE CAPS ESTIVER ATIVO ELE VAI DIMINUIR AS LETRAS
+
+if(capsLock == true){
+
+  allNormalKeys.forEach(function(allNormalKey){
+
+    allNormalKey.textContent = allNormalKey.textContent.toLowerCase();
+
+  })
+
+
+}} else { 
 
  shiftOff() 
   
@@ -79,18 +144,41 @@ allNormalKeys.forEach(function(allNormalKey) {
 } function shiftOff(){
 
   shift = false
-  capsLock = false
-  capsOff()
+  //capsLock = false
+  //capsOff()
+
   //Faz a cor do botão voltar ao normal
+
   document.getElementById('shift').style.backgroundColor = '#333333'
   document.getElementById('rightShift').style.backgroundColor = '#333333'
 
+  // ESCONDE OS SINAIS E MOSTRA OS NUMEROS:
+
+  document.getElementById('numeric').style.display = 'flex';
+  document.getElementById('specialNumeric').style.display = 'none';
+
+  document.getElementById('normalAccent').style.display = 'flex';
+  document.getElementById('invertedAccent').style.display = 'none';
+
+  document.getElementById('leftBracket').style.display = 'flex';
+  document.getElementById('leftKey').style.display = 'none';
+
+  document.getElementById('rightBracket').style.display = 'flex';
+  document.getElementById('rightKey').style.display = 'none';
+
 var allNormalKeys = document.querySelectorAll('.normalKeyPosition');
 
+if(capsLock == false){
+
 allNormalKeys.forEach(function(allNormalKey) {
-    
   allNormalKey.textContent = allNormalKey.textContent.toLowerCase();
-})
+})} else if(capsLock == true){
+
+  allNormalKeys.forEach(function(allNormalKey) {
+    allNormalKey.textContent = allNormalKey.textContent.toUpperCase();
+  })
+
+}
 } 
 capsLock = false
 

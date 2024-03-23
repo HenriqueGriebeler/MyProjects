@@ -82,4 +82,12 @@
 
  background-color: #4e4e4e;
 
+} #specialNumeric {
+
+display: none;
+
+} #numeric {
+
+  display: flex;
+
 }
