@@ -1,8 +1,12 @@
+let fn = false
+
 function keyboard(){ 
 
   document.getElementById('keyboardBody').style.display = 'block';
   
 }
+
+
 
 text = document.getElementById('text')
 keys = []
@@ -125,6 +129,12 @@ document.getElementById('leftKey').style.display = 'flex';
 document.getElementById('rightBracket').style.display = 'none';
 document.getElementById('rightKey').style.display = 'flex';
 
+document.getElementById('comma').style.display = 'none';
+document.getElementById('leftArrow').style.display = 'flex';
+
+document.getElementById('point').style.display = 'none';
+document.getElementById('rightArrow').style.display = 'flex';
+
   //SE CAPS ESTIVER ATIVO ELE VAI DIMINUIR AS LETRAS
 
 if(capsLock == true){
@@ -165,6 +175,14 @@ if(capsLock == true){
 
   document.getElementById('rightBracket').style.display = 'flex';
   document.getElementById('rightKey').style.display = 'none';
+
+  
+document.getElementById('comma').style.display = 'flex';
+document.getElementById('leftArrow').style.display = 'none';
+
+document.getElementById('point').style.display = 'flex';
+document.getElementById('rightArrow').style.display = 'none';
+
 
 var allNormalKeys = document.querySelectorAll('.normalKeyPosition');
 
@@ -222,3 +240,36 @@ capsLock = false
     allNormalKey.textContent = allNormalKey.textContent.toLowerCase();
   })
   }
+
+function fnButton(){
+
+fn ? fn = false : fn = true
+
+if(fn){
+
+document.getElementById('fn').style.backgroundColor = '#4e4e4e'
+document.getElementById('fnA').style.display = 'none'
+document.getElementById('fnLittleA').style.display = 'flex'
+
+document.getElementById('fnO').style.display = 'none'
+document.getElementById('fnLittleO').style.display = 'flex'
+
+document.getElementById('interrogation').style.display = 'none'
+document.getElementById('bigO').style.display = 'flex'
+
+} else {
+
+  document.getElementById('fn').style.backgroundColor = '#333333'
+
+  document.getElementById('fnA').style.display = 'flex'
+  document.getElementById('fnLittleA').style.display = 'none'
+  
+  document.getElementById('fnO').style.display = 'flex'
+  document.getElementById('fnLittleO').style.display = 'none'
+
+  document.getElementById('interrogation').style.display = 'flex'
+document.getElementById('bigO').style.display = 'none'
+
+}
+
+}
