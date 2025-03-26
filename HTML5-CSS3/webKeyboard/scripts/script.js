@@ -277,7 +277,9 @@ document.getElementById('bigO').style.display = 'none'
 
 }
 
-if(shift == false){ //PRECISEI CRIAR ESTA CONDIÇÃO POIS O HOVER DEIXA DE FUNCIONAR
+//PRECISEI CRIAR ESTA PARTE ABAIXO POIS O HOVER DEIXA DE FUNCIONAR ASSIM QUE O ELEMENTO TEM SEU ESTILO MODIFICADO
+
+
 
 const shiftElement = document.getElementById('shift')
 const rightshiftElement = document.getElementById('rightShift')
@@ -287,9 +289,10 @@ shiftElement.addEventListener('mouseenter', () => {
   
 })
 
-shiftElement.addEventListener('mouseleave', () => {
+  shiftElement.addEventListener('mouseleave', () => {
+    if(shift == false){
   shiftElement.style.backgroundColor = '#333333'
-  
+}
 })
 
 rightshiftElement.addEventListener('mouseenter', () => {
@@ -298,11 +301,10 @@ rightshiftElement.addEventListener('mouseenter', () => {
 })
 
 rightshiftElement.addEventListener('mouseleave', () => {
+  if(shift == false){
   rightshiftElement.style.backgroundColor = '#333333'
-
+}
 })
-
-} if(capsLock == false){
 
 const capsElement = document.getElementById('caps')
 
@@ -311,10 +313,11 @@ capsElement.addEventListener('mouseenter', () => {
 })
 
 capsElement.addEventListener('mouseleave', () => {
+  if(capsLock == false){
   capsElement.style.backgroundColor = '#333333'
-})
+}})
 
-} if(fn == false){
+
 
 const fnElement = document.getElementById('fn')
 
@@ -324,7 +327,6 @@ fnElement.addEventListener('mouseenter', () => {
 })
 
 fnElement.addEventListener('mouseleave', () => {
+  if(fn == false)
   fnElement.style.backgroundColor = '#333333'
 })
-
-}
