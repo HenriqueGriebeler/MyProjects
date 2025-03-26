@@ -243,10 +243,12 @@ capsLock = false
 
 function fnButton(){
 
-fn ? fn = false : fn = true
+  fn ? fn = false : fn = true
 
 if(fn){
 
+
+  
 document.getElementById('fn').style.backgroundColor = '#4e4e4e'
 document.getElementById('fnA').style.display = 'none'
 document.getElementById('fnLittleA').style.display = 'flex'
@@ -258,6 +260,7 @@ document.getElementById('interrogation').style.display = 'none'
 document.getElementById('bigO').style.display = 'flex'
 
 } else {
+
 
   document.getElementById('fn').style.backgroundColor = '#333333'
 
@@ -271,5 +274,57 @@ document.getElementById('bigO').style.display = 'flex'
 document.getElementById('bigO').style.display = 'none'
 
 }
+
+}
+
+if(shift == false){ //PRECISEI CRIAR ESTA CONDIÇÃO POIS O HOVER DEIXA DE FUNCIONAR
+
+const shiftElement = document.getElementById('shift')
+const rightshiftElement = document.getElementById('rightShift')
+
+shiftElement.addEventListener('mouseenter', () => {
+  shiftElement.style.backgroundColor = '#4e4e4e'
+  
+})
+
+shiftElement.addEventListener('mouseleave', () => {
+  shiftElement.style.backgroundColor = '#333333'
+  
+})
+
+rightshiftElement.addEventListener('mouseenter', () => {
+  rightshiftElement.style.backgroundColor = '#4e4e4e'
+
+})
+
+rightshiftElement.addEventListener('mouseleave', () => {
+  rightshiftElement.style.backgroundColor = '#333333'
+
+})
+
+} if(capsLock == false){
+
+const capsElement = document.getElementById('caps')
+
+capsElement.addEventListener('mouseenter', () => {
+  capsElement.style.backgroundColor = '#4e4e4e'
+})
+
+capsElement.addEventListener('mouseleave', () => {
+  capsElement.style.backgroundColor = '#333333'
+})
+
+} if(fn == false){
+
+const fnElement = document.getElementById('fn')
+
+fnElement.addEventListener('mouseenter', () => {
+  fnElement.style.backgroundColor = '#4e4e4e'
+
+})
+
+fnElement.addEventListener('mouseleave', () => {
+  fnElement.style.backgroundColor = '#333333'
+})
 
 }
