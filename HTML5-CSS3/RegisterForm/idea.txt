@@ -9,9 +9,8 @@ Campo:
 Nome;
 Idade;
 Data de nascimento;
-CEP;
-
 Email;
+
 Senha;
 Confirmar senha;
 

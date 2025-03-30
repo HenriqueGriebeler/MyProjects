@@ -3,7 +3,7 @@
 * {
 
     font-family: "Chakra Petch", sans-serif;
-    --color1: #12080F;
+    --color1: #1A1A1E;
     --color2: #510346;
     color: aliceblue;
 
@@ -36,8 +36,11 @@
     display: none;
     width: 90%;
     height: 90%;
-    top: 5%;
-    left: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    max-height: 600px;
     background-color: aliceblue;
 
 
@@ -54,13 +57,41 @@
     margin: 0;
     
 
-} #formFields {
-
-    display: flex;
-
-
-} span {
+} label {
 
     color: black;
+
+} #blurMain {
+
+    filter: blur(0px);
+
+} .FormArea {
+
+    width: 100%;
+
+} .labels {
+
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+    display: flex;
+
+} form > p {
+
+    color: rgb(218, 56, 56);
+    margin: 1px 0px 0px 5px;
+    font-size: .8em;
+    visibility: hidden;
+
+} .form {
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 40px 10px 0px 10px;
+
+} input {
+
+    color: #1A1A1E;
 
 }
