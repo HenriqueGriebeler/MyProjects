@@ -1,0 +1,20 @@
+A ideia deste projeto é basicamente colocar em prática tudo que preciso para criar um formulário maneiro que usarei no trabalho... Vamos lá.
+
+Criarei uma página que precisara do seguinte:
+
+(Ideia, ensinar o usuario a criar este tipo de página e adicionar diversas explicações maneiras, acredito que possa ficar mais legal e chamativo)
+
+Campo:
+
+Nome;
+Idade;
+Data de nascimento;
+CEP;
+
+Email;
+Senha;
+Confirmar senha;
+
+Validação de CPF e CNPJ.
+
+E em um futuro, validação por código de email ou telefone.

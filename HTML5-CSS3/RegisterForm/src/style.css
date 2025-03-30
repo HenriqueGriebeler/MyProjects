@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+
+    font-family: "Chakra Petch", sans-serif;
+    --color1: #12080F;
+    --color2: #510346;
+    color: aliceblue;
+
+} html {
+
+    background-color: var(--color1);
+
+} header, main, #menu {
+
+    margin: auto;
+    text-align: center;
+
+} h1 {
+
+    font-size: 25pt;
+    font-weight: 400;
+
+} button {
+
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(27, 187, 27);
+    font-weight: 800;
+    cursor: pointer;
+
+} #mainForm {
+
+    position: absolute;
+    display: none;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: aliceblue;
+
+
+} #mainForm > header {
+
+    background-color: rgb(40, 105, 110);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+} #mainForm > header > h1 {
+
+    background-color: rgb(40, 105, 110);
+    margin: 0;
+    
+
+} #formFields {
+
+    display: flex;
+
+
+} span {
+
+    color: black;
+
+}
