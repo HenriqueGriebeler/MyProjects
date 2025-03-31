@@ -94,4 +94,13 @@
 
     color: #1A1A1E;
 
+} .nextButtonClass {
+
+    display: flex;
+    justify-content: center;
+
+} .nextButton {
+
+    padding: 15px 40px 15px 40px;
+
 }
