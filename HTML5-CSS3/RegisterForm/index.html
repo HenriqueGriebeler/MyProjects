@@ -31,8 +31,8 @@
                 <form id="form" class="form">
                     <div class="labels">
                         <label for="name"> Name </label>
-                        <input type="text" id="name" placeholder="Richard Michaelsen">
-                    <p>Fill with your name...</p>
+                        <input type="text" id="name" placeholder="Richard Michaelsen" onchange="nameProtect()">
+                    <p id="name_message_error">Fill with your name...</p>
                     </div>
                     <div class="labels">
                         <label for="age"> Age </label>
