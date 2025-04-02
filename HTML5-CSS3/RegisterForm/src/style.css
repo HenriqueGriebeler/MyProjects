@@ -40,7 +40,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 1000px;
-    max-height: 600px;
+    max-height: 400px;
     background-color: aliceblue;
 
 
@@ -76,12 +76,16 @@
     width: 40%;
     display: flex;
 
-} .labels > p {
+} span {
+
+    visibility: hidden;
+    font-size: .8em;
+
+}.error-message {
 
     color: rgb(218, 56, 56);
-    margin: 1px 0px 0px 5px;
     font-size: .8em;
-    visibility: hidden;
+    visibility: visible;
 
 } .form {
 
