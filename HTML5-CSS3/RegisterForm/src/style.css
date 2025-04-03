@@ -81,7 +81,13 @@
     visibility: hidden;
     font-size: .8em;
 
-}.error-message {
+} .error-message {
+
+    color: rgb(218, 56, 56);
+    font-size: .8em;
+    visibility: visible;
+
+} .no-error-message {
 
     color: rgb(218, 56, 56);
     font-size: .8em;

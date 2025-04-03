@@ -31,7 +31,7 @@
                 <form id="form" class="form">
                     <div class="labels">
                         <label for="name"> Name </label>
-                        <input type="text" id="name" placeholder="Richard Michaelsen" onchange="nameProtect()">
+                        <input type="text" id="name" placeholder="Richard Michaelsen" onchange="protectFields(username, 'Fill in with only letters...')">
                     <span>Fill with a valid name</span>
                     </div>
                     <div class="labels">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="labels">
                         <label for="email"> Email </label>
-                        <input type="email" id="email" placeholder="teste@teste.com">
+                        <input type="email" id="email" placeholder="teste@teste.com" onchange="protectFields(email, 'Fill with a valid email...')">
                     <span>Fill with a valid email</span>
                     
                     </div>
