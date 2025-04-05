@@ -44,6 +44,35 @@ if(errorMessage){
 }
 }
 
+function validDate(years){
+
+let dateInput = date.value
+let currentDate = new Date()
+let dateObj = new Date(dateInput)
+
+console.log("DATA DE HOJE "+currentDate)
+console.log(dateObj)
+if((currentDate.getFullYear() - dateObj.getFullYear()) < 16 || (currentDate.getFullYear() - dateObj.getFullYear()) > 100){
+
+    console.log('VOCE PRECISA TER 16 ANOS OU MAIS')
+    errorInput(date, 'You must be over 16 years old...')
+
+} else {
+    correctInput(date);
+}
+return years = currentDate.getFullYear();
+}
+
+function validateAge(age){
+
+console.log(age.value)
+console.log(years)
+if(age.value == years){
+    console.log('TA CEERTO')
+}
+
+}
+
 function errorInput(input, message){
 
     const formItem = input.parentElement;
